@@ -1,0 +1,356 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/DEMO.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>DHC-DEMO</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet/less" href="../../../less/KIT.less" id='KIT'/>
+<link rel="stylesheet" type="text/css" href="../../../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../../../fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="../../../dist/js/scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="../../../temporary/temporary.css">
+<link rel="stylesheet" type="text/css" href="../../../dist/css/style.css">
+<script src="../../../dist/js/jquery-1.8.3.js"></script>
+<script src="../../../js/lib/less.js"></script>
+<script src="../../../dist/js/scrollbar/perfect-scrollbar.js"></script>
+<script src="../../../dist/js/common.js"></script>
+<script src="../../../js/common/menuLoad.js"></script>
+<script src="../../../temporary/temporary.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<header class="header">
+  <h1 class="header-log"><img src="../../../dist/img/dhc_logo.png"></h1>
+  <ul class="header-nav">
+    <li><a href="../../CssPage/PageStyle/pageStyle.html" title="Css组件"  id="CssList">Css 组件</a> </li>
+    <li><a href="../modal/modal.html" title="JavaScript 组件" id="JSList">JavaScript 组件</a> </li>
+    <li><a href="../../../pageDome/DHC-list.html" title="页面展示" target="_blank" id="pageList">页面展示</a> </li>
+    <li><a href="../../CustomPage/page/CustomPage.html" title="自定义" id="customList">自定义</a> </li>
+  </ul>
+  <ul class="header-remind">
+    <li class="header-search">
+      <input name="" type="text">
+      <i  class="icon-search" title="搜索"></i> </li>
+    <li class="header-remind" ><i class="icon-message-1" title="消息提醒"></i>
+      <div class="header-remind-box">
+        <p class="header-remind-title">您有<span>0</span>条站内信</p>
+        <div class="header-remind-main">
+          <div class="perfect-scroll">
+            <div class="p-10">
+              <ul class="header-remind-list">
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-remind-more"> <a href="#" >+ 查看更多</a></div>
+      </div>
+    </li>
+    <li class="header-user"><i class="icon-user-1"></i><span>您好！admin</span>
+      <div class="header-user-box">
+        <p>用户名：admin</p>
+        <p>上次登录时间：<br/>
+          2015-12-15  18:21:15</p>
+        <p>登录IP：172.166.201.122</p>
+        <p><a href="../../../index.html">修改密码</a></p>
+        <p><a href="../../../login.html">用户注销</a></p>
+      </div>
+    </li>
+  </ul>
+</header>
+<menu class="left-menu">
+  <div class="perfect-scroll">
+    <div class="clear" id="leftMenu"> </div>
+  </div>
+</menu>
+<div class="container"> <!-- InstanceBeginEditable name="body" -->
+<div class="container-box">
+<h2 class="page-title"><a href="../../../test-infra/counterAPI.html" target="_blank" class="btn btn-default">查看API</a>计数器
+  Counter</h2>
+<div class="panel">
+  <div class="row">
+    <div class="col-sm-11">
+      <h3 class="panel-title">1.基本使用（外观效果）</h3>
+      <P class="panel-note">在使用过程中即可按默认使用中HTML代码的格式组织好你自己代码来调用counter，也可仅写一个dom元素动态调用counter。</P>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border table-header">
+    <thead>
+        <tr>
+          <th scope="col" width="8%"></th>
+          <th scope="col" width="35%">默认使用</th>
+          <th scope="col" width="19%">动态调用(设置最小值)</th>
+          <th scope="col" width="19%">改变盒子尺寸</th>
+          <th scope="col" width="19%">改变排列方式</th>
+        </tr></thead> <tbody>
+        <tr>
+          <td>预览</td>
+          <td><div class="num" id='counterA'>
+              <input name="" type="text" class="num-input" value="8">
+              <input type="button" class="num-add" value="+">
+              <input type="button" class="num-reduce" value="-">
+            </div></td>
+          <td><div id='counterB'></div></td>
+          <td><div id='counterC'></div></td>
+          <td><div id='counterD'></div></td>
+        </tr>
+        <tr>
+          <td valign="top">Html</td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>div class="num" id='counterA'<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P><em>&lt;</em>input name="" type="text" class="num-input" value="8"<em> &gt;</em></P>
+                  <P><em>&lt;</em>input type="button" class="num-add" value="+"<em>&gt;</em></P>
+                  <P><em>&lt;</em>input type="button" class="num-reduce" value="-"<em>&gt;</em> </P>
+                </div>
+                <P><em>&lt;</em>/div<em>&gt;</em></P>
+              </div>
+            </div></td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>div id='counterB'<em>&gt;</em></P>
+                <P><em>&lt;</em>/div<em>&gt;</em></P>
+              </div>
+            </div></td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>div id='counterC'<em>&gt;</em></P>
+                <P><em>&lt;</em>/div<em>&gt;</em></P>
+              </div>
+            </div></td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>div id='counterD'<em>&gt;</em></P>
+                <P><em>&lt;</em>/div<em>&gt;</em></P>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td valign="top">javaScript</td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>script<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P>$(function () {</P>
+                  <div class="text-indent">
+                    <P>$('#counterA').counter({</P>
+                    <div class="text-indent">
+                      <P> max: '20'</P>
+                    </div>
+                    <P>})</P>
+                  </div>
+                  <P> })</P>
+                </div>
+                <P><em>&lt;</em>/script<em>&gt;</em></P>
+              </div>
+            </div></td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>script<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P>$(function () {</P>
+                  <div class="text-indent">
+                    <P>$('#counterB').counter({</P>
+                    <div class="text-indent">
+                      <P> max: '10',</P>
+                      <P> min: '5'</P>
+                    </div>
+                    <P>})</P>
+                  </div>
+                  <P> })</P>
+                </div>
+                <P><em>&lt;</em>/script<em>&gt;</em></P>
+              </div>
+            </div></td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>script<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P>$(function () {</P>
+                  <div class="text-indent">
+                    <P>$('#counterC').counter({</P>
+                    <div class="text-indent">
+                      <P> max: '10',</P>
+                      <P> size: 'sm'</P>
+                    </div>
+                    <P>})</P>
+                  </div>
+                  <P> })</P>
+                </div>
+                <P><em>&lt;</em>/script<em>&gt;</em></P>
+              </div>
+            </div></td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>script<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P>$(function () {</P>
+                  <div class="text-indent">
+                    <P>$('#counterC').counter({</P>
+                    <div class="text-indent">
+                      <P> max: '10',</P>
+                      <P> size: 'sm',</P>
+                      <P> type: 1</P>
+                    </div>
+                    <P>})</P>
+                  </div>
+                  <P> })</P>
+                </div>
+                <P><em>&lt;</em>/script<em>&gt;</em></P>
+              </div>
+            </div></td>
+        </tr> </tbody>
+      </table>
+      <h3 class="panel-title m-t-10">2.方法事件触发</h3>
+      <P class="panel-note"> 在使用过程中可触发2个方法（设置当前值、将盒子置为可操作状态）1个事件（得到当前值事件）。实例展示了默认盒子不可操作，点击"设置值6"按钮不可用，点击"置为操作"按钮改变盒子状态，在点击"设置值6"按钮可改变盒子值为6</P>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border table-header">
+     <thead>
+        <tr>
+          <th scope="col" width="10%"></th>
+          <th scope="col" width="55%">预览/HTML</th>
+          <th scope="col" width="35%">动态调用(设置最小值)</th>
+        </tr>
+      </thead>  
+         <tbody>
+        <tr>
+          <td valign="top">预览</td>
+          <td valign="top"><div class="p-10">
+              <div id='counter' data-state='disabled'></div>
+            </div>
+            <div class="m-l-10">
+              <button class="btn btn-secondary-alt" id="set">设置值6</button>
+              <button class="btn btn-secondary-alt m-l-10" id="change">置为操作</button>
+            </div>
+            <div class="p-10">您当前的值为：
+              <stong id='text'></stong>
+            </div></td>
+          <td rowspan="2" valign="top"><div class="example-code" style="max-height: 355px;">
+              <div class="text-indent">
+                <P><em>&lt;</em>script<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P>$(function () {</P>
+                  <div class="text-indent">
+                    <P>$('#counter').counter({</P>
+                    <div class="text-indent">
+                      <P>max: '10' </P>
+                    </div>
+                    <P>}).on('getValue', function (e, i) {</P>
+                    <div class="text-indent">
+                      <P> $('#text').text(i)</P>
+                    </div>
+                    <P>})</P>
+                    <P>$('#set').click(function () {</P>
+                    <div class="text-indent">
+                      <P>$('#counter').counter('setVal', 6)</P>
+                    </div>
+                    <P> });</P>
+                    <P> $('#change').click(function () {</P>
+                    <div class="text-indent">
+                      <P> $('#counter').counter('operation')</P>
+                    </div>
+                    <P> })</P>
+                  </div>
+                  <P> })</P>
+                </div>
+                <P><em>&lt;</em>/script<em>&gt;</em></P>
+              </div>
+            </div></td>
+        </tr>
+        <tr>
+          <td valign="top">Html</td>
+          <td valign="top"><div class="example-code">
+              <div class="text-indent">
+                <P><em>&lt;</em>div class="p-10"<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P><em>&lt;</em>div id='counter' data-state='disabled'<em>&gt;</em><em>&lt;/</em>div<em>&gt;</em> </P>
+                </div>
+                <P><em>&lt;</em>/div<em>&gt;</em></P>
+                <P><em>&lt;</em>div class="m-l-10"<em>&gt;</em></P>
+                <div class="text-indent">
+                  <P><em>&lt;</em>button class="btn btn-secondary-alt" id="set"<em>&gt;</em>设置值6<em>&lt;</em>/button<em>&gt;</em></P>
+                  <P><em>&lt;</em>button class="btn btn-secondary-alt m-l-10" id="change"<em>&gt;</em>置为操作<em>&lt;</em>/button<em>&gt;</em></P>
+                </div>
+                <P><em>&lt;</em>/div<em>&gt;</em></P>
+                <P><em>&lt;</em>div class="p-10"<em>&gt;</em>您当前的值为：<em>&lt;</em>stong id='text'<em>&gt;</em><em>&lt;</em>/stong<em>&gt;</em><em>&lt;</em>/div<em>&gt;</em></P>
+              </div>
+            </div></td>
+        </tr> </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+<!-- InstanceEndEditable --> </div>
+<div class="footer">2015-12 © 2016-12 Modern by DHC. 『The youth waystation, the dream began here!』</div>
+<!-- InstanceBeginEditable name="foot" -->
+<script src="../../../js/module/jquery.counter.js"></script> 
+<script>
+    $(function () {
+
+        $('#counterA').counter({
+
+            max: '20'
+
+        });
+        $('#counterB').counter({
+
+            max: '10',
+            min: '5'
+
+        });
+        $('#counterC').counter({
+
+            max: '10',
+            size: 'sm'
+
+        });
+        $('#counterD').counter({
+
+            max: '10',
+            size: 'sm',
+            type: 1
+
+        });
+
+        $('#counter').counter({
+
+            max: '10'
+
+        }).on('getValue', function (e, i) {
+
+            $('#text').text(i)
+
+        });
+
+
+        $('#set').click(function () {
+
+            $('#counter').counter('setVal', 6)
+
+        });
+
+        $('#change').click(function () {
+
+            $('#counter').counter('operation')
+
+        })
+    })
+</script>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

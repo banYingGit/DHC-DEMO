@@ -1,0 +1,131 @@
+.orso {
+
+  > .orso-left {
+    position: relative;
+    display: block;
+    float: left;
+    height: @orso-elect-height;
+    margin-top: 35px;
+  }
+
+  > .orso-right {
+    position: relative;
+    display: block;
+    float: left;
+    height: @orso-elect-height + 35px;
+
+    > .orso-right-box {
+      position: relative;
+      display: block;
+      margin-top: 35px;
+
+      > .orso-content {
+        float: left;
+      }
+
+    }
+    > .orso-right-box:nth-child(2) {
+
+      margin-top: 50px;
+    }
+
+    &.orso-right-1 > .orso-right-box {
+
+      height: @orso-elect-height;
+
+    }
+    &.orso-right-2 > .orso-right-box {
+
+      height: (@orso-elect-height / 2)- 25px;
+
+    }
+
+  }
+
+  .orso-content {
+    position: relative;
+    height: 100%;
+    width: @orso-elect-box-width;
+    border: solid 1px @orso-elect-box-border-color;
+    background: #fff;
+    > .orso-title {
+      position: absolute;
+      top: -35px;
+      left: 0;
+      width: 100%;
+      height: 35px;
+      padding: 0 15px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background: @orso-elect-color-accent;
+      font-size: 14px;
+      font-weight: lighter;
+      color: @orso-elect-title-color;
+      line-height: 35px;
+    }
+    > ul {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      > li {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        padding: 0 10px;
+        line-height: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        > label {
+          margin: 7px 5px 0 0;
+        }
+        > span {
+          cursor: pointer;
+        }
+        > .orso-li-btn {
+          position: absolute;
+          display: none;
+          top: 0;
+          right: 0;
+          > i {
+            margin: 0 10px 0 0;
+            color: @brand-primary;
+            font-style: normal;
+            cursor: pointer;
+          }
+
+        }
+
+        &:hover {
+          background: lighten(@brand-primary, 40%);
+
+          > .orso-li-btn {
+            display: block;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .orso-btn {
+    display: block;
+    float: left;
+    width: @orso-elect-btn-width;
+
+    > i {
+      display: block;
+      width: @orso-elect-btn-size;
+      height: @orso-elect-btn-size;
+      margin: 20px auto;
+      color: @orso-elect-color-accent;
+      font-size: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+}

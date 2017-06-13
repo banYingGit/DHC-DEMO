@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OrsoElectPage</title>
+    <link rel="stylesheet/less" href="../../../less/KIT.less" id='KIT'/>
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/page.css">
+    <link rel="stylesheet" type="text/css" href="../../../fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../../../dist/js/scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../../../temporary/temporary.css">
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/style.css">
+    <script src="../../../dist/js/jquery-1.8.3.js"></script>
+    <script src="../../../js/lib/less.js"></script>
+    <script src="../../../bower_components/ejs/ejs.js"></script>
+    <script src="../../../dist/js/scrollbar/perfect-scrollbar.js"></script>
+    <script src="../../../dist/js/common.js"></script>
+    <script src="../../../js/common/menuLoad.js"></script>
+    <script src="../../../temporary/temporary.js"></script>
+</head>
+
+<body>
+<div id="orso"></div>
+<script src="../../../js/module/jquery.orsoElect.js"></script>
+<script src="../../../js/module/jquery.orsoModify.js"></script>
+<script>
+    $(function () {
+
+        $('#orso').orsoModify({
+
+            url: 'list.json',
+
+            leftTitle: '所有属性',
+
+            rightTitle: ['展示属性', '定制属性']
+
+        })
+
+
+        $('[data-id=values]').on('click', function () {
+
+            $('#orso').orsoElect('getValue',function(data){
+
+                console.log(data)
+
+            });
+
+        });
+
+    })
+
+
+</script>
+
+</body>
+</html>

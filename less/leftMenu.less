@@ -1,0 +1,84 @@
+.left-menu {
+  position: fixed;
+  top: @header-height;
+  left: 0;
+  z-index: 3;
+  width: @left-menu-width;
+  height: 100%;
+  padding-bottom: calc(@header-height + @footer-height);
+  overflow: hidden;
+  background: @left-menu-bg;
+  .transition(all .5s);
+
+  .left-menu-list {
+    width: 100%;
+    overflow: hidden;
+    > .left-menu-one {
+      margin-top: @left-menu-spacing;
+      > a {
+        position: relative;
+        display: block;
+        height: @left-menu-nav-height;
+        padding-left: @left-menu-one-spacing;
+        border-bottom: solid 1px @gray-dark;
+        line-height: @left-menu-nav-height;
+        text-decoration: none;
+        color: @left-menu-color;
+        font-size: 14px;
+      }
+
+      > .left-menu-two {
+        display: block;
+        > li {
+          position: relative;
+          height: @left-menu-nav-height;
+          line-height: @left-menu-nav-height-two;
+
+          > a {
+            position: relative;
+            display: block;
+            margin-left: calc(@left-menu-one-spacing + 20px);
+            font-size: 14px;
+            color: @gray-light;
+            text-decoration: none;
+            transition: all .5s;
+            &:after {
+              position: absolute;
+              top: 0;
+              left: -@left-menu-one-spacing;
+              width: 20px;
+              height: @left-menu-nav-height-two;
+              line-height: @left-menu-nav-height-two;
+              color: @gray-light;
+              content: '<';
+              font-family: sans-serif;
+              transition: all .5s;
+            }
+          }
+          &.on {
+            &:before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              width: @left-menu-width;
+              height: @left-menu-nav-height-two;
+              background: @left-menu-mask;
+              content: ''
+            }
+            > a {
+              color: @left-menu-color;
+              &:after {
+                color: @left-menu-color;
+              }
+            }
+          }
+          &:hover a {
+            margin-left: calc(@left-menu-one-spacing + 10px);
+          }
+        }
+      }
+
+    }
+  }
+}

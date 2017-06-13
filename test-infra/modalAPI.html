@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../temporary/temporary.css">
+</head>
+
+<body>
+<div class="web">
+  <h2 class="panel-title">Modal API</h2>
+  <div class="p-10">
+    <h3 class="page-title m-b-10">属性：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table table-border">
+      <tr>
+        <th width="15%" scope="row">large</th>
+        <td width="10%">'true'</td>
+        <td>大等尺寸，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#modal1).modal({ </P>
+            <p> large:'true' </p>
+            <p> })</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th width="15%" scope="row">load</th>
+        <td width="10%">'url'</td>
+        <td>请求数据 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#modal1).modal({ </P>
+            <p> url:'modalData.html' </p>
+            <p> })</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">内部私有方法</th>
+        <td colspan="2">添加 [data-role=close] 属性 可触发关闭事件</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">方法：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table table-border">
+      <tr>
+        <th scope="row">'load'</th>
+        <td>调用 load 方法，参数（url,params,fn）例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#modal1').modal('load','list.html','这里是传递的内容')</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row" width="15%">'show'</th>
+        <td>调用 show 方法，显示 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#modal1').modal('show')</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">'hide'</th>
+        <td>调用 hide 方法，隐藏</td>
+      </tr>
+      <tr>
+        <th scope="row">'title'</th>
+        <td>调用 title 方法，参数（title）例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P> $('#modal1').modal('title');</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">'body'</th>
+        <td>调用 body 方法，参数（body）例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P> $('#modal1').modal('body');</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">'button'</th>
+        <td>调用 button 方法，参数（button）例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P> $('#modal1').modal('button');</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">'clear'</th>
+        <td>调用 clear 方法，清空页面主体元素</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">事件：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table table-border">
+      <tr>
+        <th width="15%" rowspan="2" scope="row">show 方法</th>
+        <td width="10%">show</td>
+        <td>在打开之前触发 show 事件 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#modal1').modal().on('show',function(){</p>
+            <p>console.info("---打开之后")</p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>shown</td>
+        <td>在打开之后触发 shown 事件</td>
+      </tr>
+      <tr>
+        <th width="15%" rowspan="2" scope="row">hide 方法</th>
+        <td width="10%">hide</td>
+        <td>在关闭之前触发 hide 事件</td>
+      </tr>
+      <tr>
+        <td>hidden</td>
+        <td>在关闭之后触发 hidden 事件</td>
+      </tr>
+      <tr>
+        <th width="15%" rowspan="2" scope="row">load 方法</th>
+        <td width="10%">load</td>
+        <td>在load之前触发 load 事件</td>
+      </tr>
+      <tr>
+        <td>done</td>
+        <td>在load之后触发 done 事件，例如
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#modal1').modal('load','list.html').on(done,function(data){</p>
+            <p>console.info("---打开之后")</p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

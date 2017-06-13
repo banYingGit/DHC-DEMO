@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS header */
+/* 框架页面布局样式 */
+.page-title {
+	position: relative;
+	height: 45px;
+	padding: 15px 20px 0 20px;
+
+	border-bottom: solid 1px #e1e1e1;
+	font-size: 14px;
+	color: #333
+}
+.page-title .btn {
+	position: absolute;
+	top: 8px;
+	right: 0;
+	font-weight: lighter;
+}
+.panel {
+	width: 100%;
+	padding-bottom: 10px;
+}
+.panel-title {
+	clear:both;
+	height: 30px;
+	padding: 10px 0 0 10px;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #333
+}
+.panel-note {
+	padding: 0 10px 5px 10px;
+	line-height: 24px;
+	color: #666
+}
+.panel-dom {
+	min-height: 20px;
+	margin: 15px 15px 0 15px;
+}
+.panel-title-custom {
+	height: 40px;
+	padding: 0 0 0 10px;
+	line-height: 40px;
+	border-bottom: dashed 1px #e1e1e1;
+	color: #333
+}
+

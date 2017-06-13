@@ -1,0 +1,48 @@
+.auto-completer {
+  position: relative;
+  background: @autoCompleter-bg;
+  > input {
+    position: relative;
+    z-index: 2;
+  }
+  > ul[data-role="selectList"] {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    max-height: @autoCompleter-ul-height;
+    overflow: auto;
+    padding: @autoCompleter-spacing;
+    border: solid 1px @autoCompleter-border-color;
+    background: @autoCompleter-bg;
+    > li {
+      position: relative;
+      width: 100%;
+      padding-left: @autoCompleter-spacing;
+      line-height: @autoCompleter-li-height;
+      cursor: pointer;
+      .transition(all .5s);
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 0;
+        background: @autoCompleter-li-bg;
+        content: '';
+        .transition(all .5s);
+      }
+      &:hover {
+        color: @autoCompleter-li-color;
+        &:after {
+          height: 100%;
+        }
+      }
+
+    }
+
+  }
+
+}

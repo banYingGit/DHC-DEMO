@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API</title>
+
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../temporary/temporary.css">
+
+</head>
+
+<body>
+<div class="web">
+  <h2 class="panel-title">raty API</h2>
+  <div class="p-10">
+    <h3 class="page-title m-b-10">属性：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th width="15%"  scope="row">number</th>
+        <td>设置小星星的个数，默认为5个。</td>
+      </tr>
+      <tr>
+        <th width="15%"  scope="row">hints</th>
+        <td>数组，各个评价级别的文字说明，默认['失望', '很差', '一般', '满意', '惊喜']</td>
+      </tr>
+      <tr>
+        <th width="15%"  scope="row">score</th>
+        <td>逆向时，以选择个数</td>
+      </tr>
+      <tr>
+        <th width="15%"  scope="row">disabled</th>
+        <td>将评价小星星设置为不可操作</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">事件：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th scope="row" width="15%">save</th>
+        <td>点击小星星可触发save 事件，得到当前调用元素id以及当前选择结果。</td>
+      </tr>
+    </table>
+    <h3 class="title">效果演示路径：<a href="http://172.16.63.49:5002/Project/Page/JavascriptPage/raty/raty.html">查看效果</a></h3>
+  </div>
+</div>
+</div>
+</body>
+</html>

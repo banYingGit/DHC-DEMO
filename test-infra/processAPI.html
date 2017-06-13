@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../temporary/temporary.css">
+
+</head>
+
+<body>
+<div class="web">
+  <h2 class="panel-title">Process API</h2>
+  <div class="p-10">
+    <h3 class="page-title m-b-10">属性：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th width="10%"  scope="row">element</th>
+        <td>'设置创建process的目标容器'</td>
+      </tr>
+      <tr>
+        <th width="10%"  scope="row">max </th>
+        <td>'设置process 的最大值,默认为100'</td>
+      </tr>
+      <tr>
+        <th width="10%"  scope="row">active</th>
+        <td>'设置值为1时，process 显示为100%'</td>
+      </tr>
+      <tr>
+        <th width="10%"  scope="row">type</th>
+        <td>'设置值为1时，process 显示为弹出层'</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">事件：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th scope="row" width="10%">'start'</th>
+        <td>进度条加载前触发start事件</td>
+      </tr>
+      <tr>
+        <th scope="row" width="10%">'process'</th>
+        <td>进度条加载中触发process事件,可得到‘当前值’，‘最大值’，‘百分比值’</td>
+      </tr>
+      <tr>
+        <th scope="row" width="10%">'end'</th>
+        <td>进度条加载后触发end事件,默认end内部私有事件为隐藏弹出进度条。</td>
+      </tr>
+      <tr>
+        <th scope="row" width="10%">'open'</th>
+        <td>弹出进度条加载后自动关闭，当再次触发open事件时,可打开进度条</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">方法：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th scope="row" width="10%">'value'</th>
+        <td>调用 value 方法，添加参数值，显示当前进度</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</body>
+</html>

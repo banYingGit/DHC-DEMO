@@ -1,0 +1,269 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  min-width: 1300px;
+  height: @header-height;
+  background: @headerbg;
+  > .header-log {
+    display: block;
+    float: left;
+    width: @header-logo-width;
+    line-height: @header-height;
+    text-align: center;
+  }
+  > .menu-btn {
+    position: fixed;
+    top: 0;
+    left: @header-logo-width;
+    width: 30px;
+    height: @header-height;
+    text-align: center;
+    > i {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      &:after {
+        display: block;
+        position: absolute;
+        top: 19px;
+        left: 0;
+        content: '';
+        float: left;
+        width: 20px;
+        height: 4px;
+        background: #eee;
+        .transform(rotate(30deg));
+        .transition(all .5s);
+      }
+      &:before {
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: 0;
+        content: '';
+        float: left;
+        width: 20px;
+        height: 4px;
+        background: #eee;
+        .transform(rotate(-30deg));
+        .transition(all .5s);
+      }
+
+    }
+    &.menu-open i:after {
+      .transform(rotate(-30deg));
+
+    }
+    &.menu-open i:before {
+      .transform(rotate(30deg));
+
+    }
+
+  }
+  > .header-nav {
+    display: block;
+    float: left;
+    > li {
+      display: block;
+      float: left;
+      > a {
+        display: block;
+        width: @header-nav-width;
+        height: @header-height;
+        border-left: 1px solid @header-mask-color;
+        text-align: center;
+        font-size: 14px;
+        line-height: @header-height;
+        color: @header-nav-color;
+        text-decoration: none;
+        .transition(all 0.2s);
+        &:hover, &.on {
+          background: @header-mask-color
+        }
+      }
+      &:last-child a {
+        border-right: 1px solid @header-mask-color;
+      }
+    }
+  }
+  > .header-remind {
+    display: block;
+    float: right;
+    > li {
+      position: relative;
+      display: block;
+      float: left;
+      height: @header-height;
+      margin-right: 10px;
+      &.header-search {
+        width: @header-search-width;
+        height: @header-search-height;
+        margin-top: calc((@header-height - @header-search-height) / 2);
+        padding: 0 40px 0 15px;
+        border-radius: @header-radius;
+        background: @header-mask-color;
+        > input {
+          width: calc(@header-search-width - 40px);
+          height: @header-search-height;
+          border: none;
+          background: none;
+          color: @header-nav-color;
+        }
+        > i {
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          width: @header-search-height;
+          height: @header-search-height;
+          line-height: @header-search-height;
+          color: @header-nav-color;
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+      }
+      &.header-remind {
+        width: @header-remind-width;
+        > i {
+          display: block;
+          width: 100%;
+          height: 100%;
+          font-size: 18px;
+          line-height: @header-height;
+          color: @header-nav-color;
+          text-align: center;
+          cursor: pointer;
+          .transition(all 0.2s);
+        }
+        &:hover {
+          i {
+            background: @header-mask-color;
+          }
+        }
+        > .header-remind-box {
+          position: absolute;
+          top: @header-height;
+          right: 0;
+          display: none;
+          width: @header-remind-box-width;
+          height: @header-remind-box-height;
+          background: #fff;
+          box-shadow: 0 0 5px 0 @mask;
+          > .header-remind-title {
+            height: @header-remind-title-height;
+            border-bottom: 1px solid @header-mask-color;
+            font-size: 14px;
+            line-height: @header-remind-title-height;
+            color: @gray-dark;
+            text-indent: 10px;
+            > span {
+              padding: 0 3px;
+              color: @brand-secondary;
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+          > .header-remind-main {
+            position: relative;
+            width: 100%;
+            height: @header-remind-main-height;
+            overflow: hidden;
+            .header-remind-list > li {
+              position: relative;
+              height: @header-remind-list-li-height;
+              padding: 0 40px 0 15px;
+              color: @gray-dark;
+              line-height: @header-remind-list-li-height;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              > a {
+                position: absolute;
+                top: 0;
+                right: 10px;
+
+                color: @brand-secondary;
+                &:hover {
+                  color: @brand-primary
+                }
+              }
+              &:before {
+                position: absolute;
+                top: 0;
+                left: @header-spacing;
+                display: block;
+                width: 10px;
+                height: @header-remind-list-li-height;
+                overflow: hidden;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 25px;
+                content: '.'
+              }
+            }
+          }
+          > .header-remind-more {
+            display: block;
+            line-height: @header-remind-list-li-height;
+            text-align: center;
+
+            > a {
+              color: @brand-secondary;
+              &:hover {
+                color: @brand-primary
+              }
+            }
+          }
+        }
+
+      }
+      &.header-user {
+        > i, span {
+          display: block;
+          float: left;
+          height: @header-height;
+          margin-right: @header-spacing;
+          line-height: @header-height;
+          color: @header-nav-color;
+        }
+        > i {
+          font-size: 26px;
+        }
+        > .header-user-box {
+          position: absolute;
+          display: none;
+          top: @header-height;;
+          right: 0;
+          width: @header-user-box-width;
+          padding: @header-spacing 0;
+          background: #fff;
+          box-shadow: 0 0 5px 0 @mask;
+          > p {
+            padding: @header-spacing 0;
+            margin: 0 10px;
+            line-height: 20px;
+            text-align: left;
+            border-bottom: dashed 1px lighten(@gray-base, 80%);
+            color: @gray-dark;
+            > a {
+              color: @brand-secondary;
+              &:hover {
+                color: @brand-primary
+              }
+            }
+          }
+        }
+      }
+
+      &:hover .header-remind-box, &:hover .header-user-box {
+        display: block;
+      }
+    }
+  }
+}

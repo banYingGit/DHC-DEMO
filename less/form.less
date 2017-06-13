@@ -1,0 +1,310 @@
+// Forms
+input[disabled], textarea[disabled], select[disabled] {
+  background: #eee;
+}
+
+.form-box {
+  width: 100%;
+  height: @form-base-height;
+  padding: 0 5px;
+  border: solid 1px @form-border;
+  border-radius: @form-round;
+   &:focus {
+    border-color: @form-border-focus;
+    box-shadow: 0 0 2px lighten(@form-border-focus, 2%);
+  }
+}
+
+.form-box.error {
+  border: solid 1px red;
+  + label.error {
+    position: absolute;
+    display: block;
+    vertical-align: top;
+    line-height: 20px;
+    color: red;
+    white-space: nowrap;
+    > i:before {
+      vertical-align: top;
+      font-size: 20px;
+      color: red;
+    }
+
+  }
+  &[data-error="top"] {
+    + label.error {
+      top: -10px;
+    }
+  }
+  &[data-error="right"] {
+    + label.error {
+      top: 10px;
+      left: 100%;
+      margin-left: 10px;
+    }
+  }
+  &[data-error="bottom"] {
+    + label.error {
+      top: calc(@form-base-height + 10px);
+      left: 10px;
+    }
+  }
+  &:focus {
+    border-color: red;
+    box-shadow: 0 0 0;
+  }
+}
+
+.form-textarea {
+  width: 100%;
+  height: @form-large-height;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border: solid 1px @form-border;
+  border-radius: @form-round;
+  line-height: @form-base-height;
+  &:focus {
+    border-color: @form-border-focus;
+    box-shadow: inset 0 0 3px lighten(@form-border-focus, 3%);
+  }
+}
+
+.form-textarea.error {
+  border: solid 1px red;
+  &:focus {
+    border-color: red;
+    box-shadow: inset 0 0 0;
+  }
+  + label.error {
+    position: absolute;
+    display: block;
+    vertical-align: top;
+    line-height: 20px;
+    color: red;
+    white-space: nowrap;
+    > i:before {
+      vertical-align: top;
+      font-size: 20px;
+      color: red;
+    }
+  }
+  &[data-error="top"] {
+    + label.error {
+      top: -10px;
+    }
+  }
+  &[data-error="right"] {
+    + label.error {
+      top: 10px;
+      left: 100%;
+      margin-left: 10px;
+    }
+  }
+  &[data-error="bottom"] {
+    + label.error {
+      top: calc(@form-base-height + 10px);
+      left: 10px;
+    }
+  }
+  &:focus {
+    border-color: red;
+    box-shadow: 0 0 0;
+  }
+}
+
+.form-select {
+  width: 100%;
+  height: @form-base-height;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border: solid 1px @form-border;
+  border-radius: @form-round;
+  line-height: @form-base-height;
+  &:focus {
+    border-color: @form-border-focus;
+    box-shadow: inset 0 0 3px lighten(@form-border-focus, 3%);
+  }
+}
+
+/* form check*/
+.check-group {
+  input[type="checkbox"] {
+    display: none;
+    min-height: 20px;
+    & + label {
+      position: relative;
+      display: block;
+      float: left;
+      width: @check-default-size;
+      height: @check-default-size;
+      border: solid 2px @form-border;
+      background: #fff;
+      box-sizing: border-box;
+      transition: background-color .2s;
+      cursor: pointer;
+      &:after {
+        display: block;
+        content: '';
+      }
+    }
+    &[checked='true'] + label, &:checked + label {
+      border-color: @form-border-focus;
+      background: url("../images/check.png") center no-repeat  @form-border-focus;
+    }
+    &[disabled] + label {
+      background: @gray-lighter;
+      cursor: default;
+    }
+  }
+}
+
+.check-group-tab {
+  input[type="checkbox"] {
+    display: none;
+    min-height: 20px;
+    & + label {
+      position: relative;
+      z-index: 1;
+      display: block;
+      float: left;
+      width: @form-tab-width;
+      height: @form-base-height;
+      margin-left: -1px;
+      border: solid 1px darken(@form-border-focus, 10%);
+      box-sizing: border-box;
+      line-height: calc(@form-base-height - 2);
+      transition: background-color .2s;
+      cursor: pointer;
+      &:after {
+        display: block;
+        color: darken(@form-border-focus, 10%);;
+        text-align: center;
+        content: attr(data-val);
+      }
+    }
+    &[checked='true'] + label, &:checked + label {
+      background: @form-border-focus;
+      &:after {
+        color: @form-color-other;
+      }
+    }
+    &[disabled] + label {
+      z-index: 0;
+      border-color: @gray-lighter;
+      background: @gray-lighter;
+      cursor: default;
+      &:after {
+        color: @gray-light;
+      }
+    }
+  }
+}
+
+/* ¿ª¹Ø */
+.check-on-off {
+  input[type="checkbox"] {
+    display: none;
+    & + label {
+      position: relative;
+      display: block;
+      width: @on-off-width;
+      height: @on-off-height;
+      padding: @on-off-padding;
+      border: solid 1px @form-border;
+      border-radius: calc(@form-base-height / 2);
+      box-sizing: border-box;
+      transition: background-color .2s;
+      cursor: pointer;
+      &:after {
+        display: block;
+        width: 50%;
+        height: 100%;
+        border-radius: inherit;
+        background: @form-border;
+        content: '';
+        transition: all .2s;
+      }
+    }
+    &[checked='true'] + label, &:checked + label  {
+      border-color: @form-border-focus;
+      &:after {
+        margin-left: 50%;
+        background: lighten(@form-border-focus, 5%);;
+      }
+    }
+  }
+
+}
+
+/* form radio*/
+.radio-group {
+  input[type="radio"] {
+    display: none;
+    & + label {
+      position: relative;
+      display: block;
+      float: left;
+      width: @check-default-size;
+      height: @check-default-size;
+      border-radius: 50%;
+      border: solid 2px @form-border;
+      background: #fff;
+      box-sizing: border-box;
+      transition: background-color .2s;
+      cursor: pointer;
+      &:after {
+        display: block;
+        content: '';
+      }
+    }
+    &[checked='true'] + label, &:checked + label  {
+      border-color: @form-border-focus;
+      background: url("../images/radio.png") center no-repeat  @form-border-focus;
+    }
+    &[disabled] + label {
+      background: @gray-lighter;
+      cursor: default;
+    }
+  }
+}
+
+.radio-group-tab {
+  input[type="radio"] {
+    display: none;
+    & + label {
+      position: relative;
+      z-index: 1;
+      display: block;
+      float: left;
+      width: @form-tab-width;
+      height: @form-base-height;
+      margin-left: -1px;
+      border: solid 1px darken(@form-border-focus, 10%);
+      box-sizing: border-box;
+      line-height: calc(@form-base-height - 2);
+      transition: background-color .2s;
+      cursor: pointer;
+      &:after {
+        display: block;
+        color: darken(@form-border-focus, 10%);;
+        text-align: center;
+        content: attr(data-val);
+      }
+    }
+    &[checked='true'] + label, &:checked + label  {
+      background: @form-border-focus;
+      &:after {
+        color: @form-color-other;
+      }
+    }
+    &[disabled] + label {
+      z-index: 0;
+      border-color: @gray-lighter;
+      background: @gray-lighter;
+      cursor: default;
+      &:after {
+        color: @gray-light;
+      }
+    }
+  }
+}

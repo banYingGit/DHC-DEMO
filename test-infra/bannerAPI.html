@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../temporary/temporary.css">
+</head>
+
+<body>
+<div class="web">
+  <h2 class="panel-title">banner API</h2>
+  <div class="p-10">
+    <h3 class="page-title m-b-10">属性：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th width="10%"  scope="row">focusPosition</th>
+        <td>【焦点对齐】'参数left、 right、 center，分别为焦点左对齐、右对齐、居中对齐，默认为不显示'</td>
+      </tr>
+      <tr>
+        <th width="10%"  scope="row">focusStyle</th>
+        <td>【焦点样式】'参数img、 text、 point，分别为显示缩略图、标题、点点，默认为点点'</td>
+      </tr>
+            <tr>
+        <th width="10%"  scope="row">animation:</th>
+        <td>【动画效果】'参数fade、slide，分别为淡入淡出、滑动，默认为淡入淡出'</td>
+      </tr>
+            <tr>
+        <th width="10%"  scope="row">interval：</th>
+        <td>【动画间隔时间】'参数以ms 为单位计算，默认为5000，即5s'</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">事件：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th width="10%"  scope="row">loopEnd</th>
+        <td>触发 loopEnd 事件可在轮播图播放一圈后添加回调函数</td>
+      </tr>
+      <tr>
+        <th width="10%"  scope="row">end</th>
+        <td>触发 end 事件 可在轮播图播放结束后添加回调函数</td>
+      </tr>
+       
+    </table>
+    <h3 class="page-title m-b-10">方法：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th scope="row" width="10%">next</th>
+        <td>调用next 方法 可跳到下一张</td>
+      </tr>
+      <tr>
+        <th scope="row">prev</th>
+        <td>调用prev 方法 可跳到上一张</td>
+      </tr>
+      <tr>
+        <th scope="row">num</th>
+        <td>调用num 方法，参数‘数字’， 可跳到指定一屏</td>
+      </tr> <tr>
+        <th scope="row">autoPlay</th>
+        <td>调用autoPlay 方法 可执行自动播放</td>
+      </tr> <tr>
+        <th scope="row">stopPlay</th>
+        <td>调用stopPlay 方法 可执行停止播放</td>
+      </tr>
+    </table>
+  
+  </div>
+</div>
+</div>
+</body>
+</html>

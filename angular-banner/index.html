@@ -1,0 +1,142 @@
+<!doctype html>
+<html ng-app="a2_11">
+<meta charset="utf-8">
+<head>
+    <title>添加元素样式</title>
+    <script src="angular.js"></script>
+    <script src="demo.js"></script>
+    <style type="text/css">
+        body {
+            font-size: 12px
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 408px;
+            height: 200px;
+            list-style-type: none
+        }
+
+        ul li {
+            float: left;
+            padding: 5px 0
+        }
+
+        ul .odd {
+            color: #0026ff
+        }
+
+        ul .even {
+            color: red
+        }
+
+        ul .bold {
+            font-weight: 700
+        }
+
+        ul li span {
+            float: left;
+            padding: 0 10px;
+            width: 52px
+        }
+
+        ul .color-theme {
+            background-color: #ccc
+        }
+
+        .color {
+            color: red;
+        }
+    </style>
+    <meta charset="utf-8">
+</head>
+<body>
+<div style="width:500px; height:200px; border:solid 1px #d1d1d1;">
+
+<div ng-controller="ParentController">
+<div ng-controller="ChildController">
+<a ng-click="sayHello()">Say hello</a>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+<div ng-controller="c2_11">
+    <ul>
+        <li ng-class="{{bold}}"><span>序号</span> <span>姓名</span> <span>性别</span> <span>是否首条</span> <span>是否尾条</span></li>
+        <li ng-class-odd="'odd'"
+            ng-class-even="'even'" ng-repeat=" stu in data"
+            ng-click='li_click($index)'
+            ng-class='{"color-theme": $index==test}'><span>{{$index+1}}</span> <span>{{stu.name}}</span> <span>{{stu.sex}}</span>
+            <span>{{$first?'是':'否'}}</span> <span>{{$last?'是':'否'}}</span></li>
+    </ul>
+
+    <div>
+        <p ng-class="{true: 'color hover', false: ''}[isActive]" class="" ng-click="isActive=true">赛事介绍1</p>
+
+        <p ng-class="{true: ' ', false: 'color hover'}[isActive]" ng-click="isActive=false">赛事合作2</p>
+
+        <p ng-class="Class" ng-click="Class='color'">Class</p>
+        <span id='1' ng-class='{"myclass":tog==1}' ng-click='tog=1'>span 1</span>
+
+        <div ng-click="switchCheckBox()"> window.event.target</div>
+    </div>
+</div>
+
+
+<span ng-click="showList = !showList">应用列表</span>  
+      <ul ng-show="showList" class="sub-list">  
+        <li>aa</li>  
+        <li>ddddaa</li>  
+        <li>cccaa</li>  
+      </ul> 
+      <ul ng-hide="showList" class="sub-list">  
+        <li>5555555111</li>  
+        
+      </ul>  
+</span>  
+<script type="text/javascript">
+    var a2_11 = angular.module('a2_11', []);
+
+    a2_11.controller('c2_11', ['$scope', function ($scope) {
+        $scope.bold = "bold";
+        $scope.li_click = function (i) {
+            $scope.test = i;
+        };
+
+        $scope.switchCheckBox = function () {
+            var elm = window.event.srcElement || window.event.target;
+
+            console.log(window.event.srcElement || window.event.target)
+
+            console.log('-------------', elm.className)
+
+            if (elm.className != 'color') {
+                elm.className = 'color'
+
+            } else {
+                elm.className = ''
+            }
+
+        }
+        $scope.test =
+        {name: "张明明", sex: "女"}
+        ;
+
+        $scope.data = [
+            {name: "张明明", sex: "女"},
+            {name: "李清思", sex: "女"},
+            {name: "刘小华", sex: "男"},
+            {name: "陈忠忠", sex: "男"}
+        ];
+    }]);
+
+
+</script>
+</body>
+</html>

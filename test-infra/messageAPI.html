@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../temporary/temporary.css">
+
+</head>
+
+<body>
+<div class="web">
+  <h2 class="panel-title">Message API</h2>
+  <div class="p-10">
+    <h3 class="page-title m-b-10">属性：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th width="10%"  scope="row">title</th>
+        <td colspan="2">'设置message 标题内容'</td>
+      </tr>
+      <tr>
+        <th width="10%"  scope="row">body </th>
+        <td colspan="2">'设置message 正文内容'</td>
+      </tr>
+      <tr>
+        <th width="10%" rowspan="4" scope="row">type: '可选样式'</th>
+        <td width="10%">'info'</td>
+        <td><strong>默认</strong> 样式蓝色 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message()</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>'warning'</td>
+        <td>样式黄色 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({ </P>
+            <p> type:''warning'' </p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>'error'</td>
+        <td>样式红色 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({ </P>
+            <p> type:'error'</p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>'complete'</td>
+        <td>样式绿色 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({ </P>
+            <p> type:'complete'</p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th width="10%" rowspan="5" scope="row">cls: '显示按钮'</th>
+        <td width="10%">1</td>
+        <td><strong>默认</strong> ，1代表“确定”例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({</P>
+            <P> cls: 1 </P>
+            <P>})</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2代表“是” ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({ </P>
+            <p>cls: 2 </p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>4代表“取消” ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({ </P>
+            <p>cls: 4 </p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>8代表“否” ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({ </P>
+            <p>cls: 8 </p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <td>1|2|4</td>
+        <td>选择三个按钮 ，例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message({ </P>
+            <p>cls: 1|2|4</p>
+            <p> }) </P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th width="10%"  scope="row">time: '显示倒计时'</th>
+        <td width="10%">0</td>
+        <td><strong>默认 0</strong> ，不设置倒计时，如果设置变量大于0，则该变量为倒计时的时间。 </td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">方法：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th scope="row" width="10%">'show'</th>
+        <td>调用 show 方法，显示 ， 参数e, fn,添加回调函数，
+          <br/>例如：当e=1,该回调函数为“是”按钮的回调函数</td>
+      </tr>
+      <tr>
+        <th scope="row">'hide'</th>
+        <td>调用 hide 方法，隐藏</td>
+      </tr>
+      <tr>
+        <th scope="row">'title'</th>
+        <td>调用 setTitle 方法，参数（messageTitle）例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P> $('#myMessage).message('title');</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">'body'</th>
+        <td>调用 setBody 方法，参数（body）例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P> $('#myMessage).message('body');</P>
+            <P>...</P>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">‘touch’</th>
+        <td>调用 touch 方法，参数（type, fn）例如：
+          <div class="text-indent">
+            <P>...</P>
+            <P>$('#myMessage).message('touch', 'sure', function (e, o) {</P>
+            <p> $('#myMessage).message('hide');</p>
+            <p> })</p>
+            <P>...</P>
+          </div></td>
+      </tr>
+    </table>
+  
+  </div>
+</div>
+</div>
+
+</body>
+</html>

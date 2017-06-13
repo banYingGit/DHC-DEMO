@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PageZoom-iframe</title>
+    <link rel="stylesheet" type="text/css" href="../../../../dist/css/build.css">
+    <script src="../../../../dist/js/jquery-1.8.3.js"></script>
+    <script src="../../../../js/module/jquery.pageZoom.js"></script>
+</head>
+
+<body>
+<div id="page">
+    <div style="width:70%; float: left">
+        <iframe src="iframe/ConsumerInformation.html" width="100%" height="300" frameborder="no" border="0"
+                scrolling="no"></iframe>
+    </div>
+    <div style="width:30%; float: left">
+        <iframe src="iframe/RoleInformation.html" width="100%" height="300" frameborder="no" border="0"
+                scrolling="no"></iframe>
+    </div>
+    <div style="width: 50%; float: left">
+        <iframe src="iframe/ConsumerInformation.html" width="100%" height="300" frameborder="no" border="0"
+                scrolling="no"></iframe>
+    </div>
+    <div style="width: 50%; float: left">
+        <iframe src="iframe/RoleInformation.html" width="100%" height="300" frameborder="no" border="0"
+                scrolling="no"></iframe>
+    </div>
+
+
+</div>
+
+<script>
+
+
+    $(function () {
+
+
+        $("#page").pageZoom({
+
+            zoom: 1
+        })
+
+
+    })
+
+
+</script>
+</body>
+</html>

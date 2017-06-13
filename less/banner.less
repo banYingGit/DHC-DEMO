@@ -1,0 +1,151 @@
+.banner {
+  position: relative;
+  width: @banner-width;
+  height: @banner-height;
+  overflow: hidden;
+  > .banner-body {
+    width: inherit;
+    height: inherit;
+    > li {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      &.on {
+
+      }
+      > .banner-pic {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 0;
+        > img {
+          position: relative;
+          left: -50%;
+          top: 0;
+        }
+      }
+    }
+  }
+  > .banner-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    > .banner-arrow-prev, > .banner-arrow-next {
+      position: absolute;
+      width: @banner-arrow-width;
+      height: @banner-arrow-height;
+      top: -(@banner-height + @banner-arrow-height)/2;
+      background: @banner-arrow-bg;
+      border-radius: @banner-arrow-round;
+      text-align: center;
+      cursor: pointer;
+      transition: all .5s;
+      &:hover {
+        background: @banner-arrow-bg-accent;
+      }
+      > span {
+        line-height: @banner-arrow-height;
+        color: @banner-color;;
+        font-size: @banner-arrow-font;
+      }
+    }
+    > .banner-arrow-prev {
+      left: @banner-arrow-spacing
+    }
+    > .banner-arrow-next {
+      right: @banner-arrow-spacing
+    }
+  }
+  > .banner-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 3%;
+    height: @banner-nav-height;
+    background: @banner-nav-bg;
+
+    > li {
+      display: inline-block;
+      cursor: pointer;
+    }
+    //显示小缩略图
+    &.banner-nav-img > li {
+      position: relative;
+      width: @banner-nav-img-width;
+      height: @banner-nav-img-height;
+      margin: (@banner-nav-height - @banner-nav-img-height)/ 2 @banner-nav-img-spacing;
+      transition: all .5s;
+      > img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        .transform(scale(1.1, 1.1));
+        > img {
+          z-index: 2;
+        }
+      }
+      &.on {
+        .transform(scale(1, 1));
+        > img {
+          z-index: 2;
+        }
+      }
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        content: '';
+
+      }
+
+    }
+
+    //显示标题
+    &.banner-nav-text > li {
+      position: absolute;
+      top: 100%;
+      left:2%;
+      width: 96%;
+      height: @banner-nav-height;
+      line-height: @banner-nav-height;
+      color: @banner-color;
+      font-size: @banner-nav-font;
+      transition: all .5s;
+      &.on {
+        top: 0;
+      }
+    }
+
+    //显示点点
+    &.banner-nav-point > li {
+      width: @banner-nav-point-width;
+      height: @banner-nav-point-height;
+      margin: (@banner-nav-height - @banner-nav-point-height)/ 2 @banner-nav-img-spacing;
+      border-radius: @banner-nav-point-round;
+      background: @banner-nav-point-bg;
+      transition: all .5s;
+      &:hover {
+        background: @banner-nav-point-bg-accent;
+      }
+      &.on {
+        width: @banner-nav-point-width-accent;
+        background: @banner-nav-point-bg-accent;
+      }
+
+    }
+
+  }
+
+}

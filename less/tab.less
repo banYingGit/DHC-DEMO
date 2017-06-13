@@ -1,0 +1,180 @@
+// Tab  选项卡
+.tab {
+  width: 100%;
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+
+  //装饰线
+  &.tab-line {
+    > .tab-title {
+      > li {
+        &:after {
+          position: absolute;
+          top: 0;
+          right: -1px;
+          color: @tab-border-color;
+          content: '|';
+        }
+      }
+    }
+  }
+  //	卡片样式
+  &.tab-card {
+    > .tab-title {
+      margin: 0 0 -1px 1px;
+      > li {
+        position: relative;
+        height: @tab-height;
+        line-height: @tab-height;
+        > span {
+          position: relative;
+          height: inherit;
+          margin-left: -1px;
+          border: solid 1px @tab-border-color;
+          background: @tab-bg;
+          color: @tab-color;
+          line-height: inherit;
+        }
+        &.on {
+          > span {
+            z-index: 1;
+            border-bottom-color: @tab-bg;
+            color: @tab-color-accent;
+          }
+        }
+      }
+    }
+    > .tab-body {
+      border: solid 1px @tab-body-border-color;
+      background: @tab-bg;
+      padding: @tab-v @tab-h;
+    }
+  }
+  //	文字卡片
+  &.tab-card-text {
+    > .tab-title {
+      margin: 0 0 0 1px;
+      > li {
+        position: relative;
+        height: @tab-height;
+        line-height: @tab-height;
+        > span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          border-top: solid 2px transparent;
+          background: @tab-bg;
+          color: @tab-color;
+          line-height: inherit;
+        }
+        &.on {
+          > span {
+            top: 1px;
+            left: -1px;
+            border: solid 1px @tab-border-color;
+            border-top: solid 2px @tab-border-color-accent;
+            border-bottom-color: @tab-bg;
+            color: @tab-color-accent;
+          }
+        }
+      }
+    }
+    > .tab-body {
+      padding: @tab-v @tab-h;
+      border-top: solid 1px @tab-border-color;
+      background: @tab-bg;
+    }
+    &.tab-line {
+      > .tab-title {
+        > li {
+          &:after {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  //	文字样式
+  &.tab-text {
+    > .tab-title {
+      > li {
+        position: relative;
+        height: @tab-height;
+        line-height: @tab-height;
+        > span {
+          position: absolute;
+          top: 1px;
+          left: 0;
+          height: 100%;
+          border-bottom: solid 1px @tab-border-color;
+          background: @tab-bg;
+          color: @tab-color;
+          line-height: inherit;
+        }
+        &.on {
+          > span {
+            top: 1px;
+            border-bottom: solid 2px @tab-border-color-accent;
+            color: @tab-color-accent;
+          }
+        }
+      }
+    }
+    > .tab-body {
+      padding: @tab-v @tab-h;
+      border-top: solid 1px @tab-border-color;
+      background: @tab-bg;
+    }
+  }
+  //	共通样式
+  > .tab-title {
+    width: 100%;
+    &:after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+    > li {
+      display: block;
+      float: left;
+      min-width: @tab-width;
+      text-align: center;
+      > span {
+
+        display: block;
+        min-width: @tab-width;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all .2s;
+        padding: 0 @tab-v;
+        &:hover {
+          color: @tab-color-accent;
+        }
+
+        > i {
+          float: right;
+          margin-left: 5px;
+          font-style: normal;
+          color: @gray-light;
+          &:hover {
+            color: @tab-color-accent;
+          }
+        }
+      }
+    }
+  }
+  > .tab-body {
+    width: 100%;
+    > li {
+      display: none;
+      width: 100%;
+      &.on {
+        display: block;
+      }
+    }
+  }
+}

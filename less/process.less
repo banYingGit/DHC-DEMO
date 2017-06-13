@@ -1,0 +1,94 @@
+//½ø¶ÈÌõ
+
+// animation
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.process {
+  position: relative;
+  width: @process-width;
+  height: @process-height;
+  background-color: @process-bg;
+  line-height: @process-height;
+  > .process-bar {
+    width: 0;
+    height: 100%;
+    background-color: @process-bg-accent;
+    background-image: url("../images/loadingline.png");
+    background-size: auto 100%;
+    background-position: center;
+    color: @process-color;
+    text-align: center;
+
+  }
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: @process-height + 5;
+    left: 0;
+    color: @process-color-accent;
+    text-align: center;
+    content: attr(data-context);
+  }
+  &.process-active {
+    > .process-bar {
+      .animation(progress-bar-stripes  2s linear infinite);
+    }
+  }
+}
+
+.process-pop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: @zindex-process;
+  display: none;
+  width: @process-pop-width;
+  height: (@process-height+@process-pop-spacing*2);
+  margin: -(@process-height+@process-pop-spacing*2)/2 0 0 -@process-pop-width/2;
+  padding: @process-pop-spacing 0;
+  border-radius: @process-pop-round;
+  background: #fff;
+
+  &.on{
+    display: block;
+  }
+
+  > .process {
+    width: 80%;
+    margin: 0 auto;
+  }
+  & + .process-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: @zindex-process - 1;
+    width: 100%;
+    height: 100%;
+    background: @mask;
+
+    &.on{
+      display: block;
+    }
+  }
+
+}
+
+

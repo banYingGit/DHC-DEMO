@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../temporary/temporary.css">
+
+</head>
+
+<body>
+<div class="web">
+  <h2 class="panel-title">Choose API</h2>
+  <div class="p-10">
+    <h3 class="page-title m-b-10">属性：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table table-border">
+      <tr>
+        <th width="15%" scope="row">'url'</th>
+        <td>初始化表格数据,url 为数据源，格式为Html</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">方法：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table table-border">
+      <tr>
+        <th width="15%" scope="row">load</th>
+        <td>调用 load 方法，加载数据表</td>
+      </tr>
+      <tr>
+        <th scope="row">getValue</th>
+        <td>调用 getValue 方法，并且添加回调函数，可以获取当前选择元素的value值</td>
+      </tr>
+      <tr>
+        <th scope="row">setValue</th>
+        <td>调用 setValue 方法，设置参数值，将相应表中对应的元素选择上</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">事件：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table table-border">
+      <tr>
+        <th width="15%" scope="row">change</th>
+        <td>触发change 事件，判断表格数据状态</td>
+      </tr>
+      <tr>
+        <th width="15%" scope="row">load </th>
+        <td>触发load 事件，在加载数据表格前添加回调函数</td>
+      </tr>
+      <tr>
+        <th width="15%" scope="row">loaded </th>
+        <td>触发loaded 事件，在加载数据表格后添加回调函数</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+</body>
+</html>

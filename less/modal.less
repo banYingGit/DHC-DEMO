@@ -1,0 +1,69 @@
+// µ¯³ö´°¿Ú
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: @zindex-modal;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-color: @modal-border;
+  background: @modal-bg;
+  transition: all .5s;
+  > .modal-title {
+    width: 100%;
+    height: @modal-title-height;
+    padding: 0 10px;
+    background: @modal-bg-accent;
+    line-height: @modal-title-height;
+    > span {
+      color: @modal-color-title;
+      font-size: 14px;
+    }
+    > a {
+      float: right;
+      color: @modal-color-title;
+      text-decoration: none;
+    }
+  }
+  > .modal-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+
+    > .btn {
+      margin: 0 5px;
+    }
+  }
+  &.modal-show {
+    padding: @modal-spacing;
+    margin: -(@modal-height /2) 0 0 -(@modal-width / 2);
+    width: @modal-width;
+    height: @modal-height;
+    border: solid @modal-border-width @modal-border;
+    > .modal-btn {
+      display: block;
+    }
+    &.modal-lg {
+      margin: -(@modal-height-lg /2) 0 0 -(@modal-width-lg / 2);
+      width: @modal-width-lg;
+      height: @modal-height-lg;
+    }
+  }
+  & + .modal-background {
+    position: fixed;
+    z-index: calc(@zindex-modal - 1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: @mask;
+  }
+}

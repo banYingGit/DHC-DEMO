@@ -1,0 +1,249 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/DEMO.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>DHC-DEMO</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet/less" href="../../../less/KIT.less" id='KIT'/>
+<link rel="stylesheet" type="text/css" href="../../../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../../../fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="../../../dist/js/scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="../../../temporary/temporary.css">
+<link rel="stylesheet" type="text/css" href="../../../dist/css/style.css">
+<script src="../../../dist/js/jquery-1.8.3.js"></script>
+<script src="../../../js/lib/less.js"></script>
+<script src="../../../dist/js/scrollbar/perfect-scrollbar.js"></script>
+<script src="../../../dist/js/common.js"></script>
+<script src="../../../js/common/menuLoad.js"></script>
+<script src="../../../temporary/temporary.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<header class="header">
+  <h1 class="header-log"><img src="../../../dist/img/dhc_logo.png"></h1>
+  <ul class="header-nav">
+    <li><a href="pageStyle.html" title="Css组件"  id="CssList">Css 组件</a> </li>
+    <li><a href="../../JavascriptPage/modal/modal.html" title="JavaScript 组件" id="JSList">JavaScript 组件</a> </li>
+    <li><a href="../../../pageDome/DHC-list.html" title="页面展示" target="_blank" id="pageList">页面展示</a> </li>
+    <li><a href="../../CustomPage/page/CustomPage.html" title="自定义" id="customList">自定义</a> </li>
+  </ul>
+  <ul class="header-remind">
+    <li class="header-search">
+      <input name="" type="text">
+      <i  class="icon-search" title="搜索"></i> </li>
+    <li class="header-remind" ><i class="icon-message-1" title="消息提醒"></i>
+      <div class="header-remind-box">
+        <p class="header-remind-title">您有<span>0</span>条站内信</p>
+        <div class="header-remind-main">
+          <div class="perfect-scroll">
+            <div class="p-10">
+              <ul class="header-remind-list">
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-remind-more"> <a href="#" >+ 查看更多</a></div>
+      </div>
+    </li>
+    <li class="header-user"><i class="icon-user-1"></i><span>您好！admin</span>
+      <div class="header-user-box">
+        <p>用户名：admin</p>
+        <p>上次登录时间：<br/>
+          2015-12-15  18:21:15</p>
+        <p>登录IP：172.166.201.122</p>
+        <p><a href="../../../index.html">修改密码</a></p>
+        <p><a href="../../../login.html">用户注销</a></p>
+      </div>
+    </li>
+  </ul>
+</header>
+<menu class="left-menu">
+  <div class="perfect-scroll">
+    <div class="clear" id="leftMenu"> </div>
+  </div>
+</menu>
+<div class="container"> <!-- InstanceBeginEditable name="body" -->
+<div class="container-box">
+  <h2 class="page-title">页面样式</h2>
+  <div class="panel">
+    <h3 class="panel-title">Normalize</h3>
+    <p class="panel-note">基本样式定义：由于各个浏览器默认样式均有所不同，所以我们为了浏览器兼容性，需要将一些常用元素标签默认样式格式化，已到达统一样式。 </p>
+    <h3 class="panel-title">网格布局</h3>
+    <p class="panel-note">样式库使用了 12 列的响应式网格系统。使用时需在外围容器上添加 .row  class，在列上添加 .col-[sm|md|lg]-[1-12] class，然后根据不同的屏幕需求设置不同的宽度。 </p>
+    <table width="50%" border="0" cellspacing="0" cellpadding="0" class="table table-header">
+      <tr>
+        <th scope="col" width="16%">&nbsp;</th>
+        <th scope="col" width="21%">超小屏幕（<768px）</th>
+        <th scope="col" width="21%">小屏幕（>=768px）</th>
+        <th scope="col" width="21%">中等屏幕（>=992px）</th>
+        <th scope="col" width="21%">大屏幕（>=1200px）</th>
+      </tr> <tbody>
+      <tr>
+        <td>class 前缀</td>
+        <td>.col-xs-</td>
+        <td>.col-sm-</td>
+        <td>.col-md-</td>
+        <td>.col-lg-</td>
+      </tr> </tbody>
+    </table>
+    <p class="m-l-10 m-t-10"><a href="网格布局.html" target="_blank" class="btn btn-secondary-alt" >查看效果</a></p>
+    <h3 class="panel-title">辅助布局</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="panel-note">1、元素浮动</p>
+        <div class="wgt-code">
+          <ul class="wgt-code-title">
+            <li class="on"><span>Css</span> </li>
+            <li><span>Demo</span> </li>
+            <li><span>Html</span> </li>
+          </ul>
+          <ul class="wgt-code-box">
+            <li class="on">
+              <div class="p-10">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-header">
+                  <tr>
+                    <th scope="col" width="16%">&nbsp;</th>
+                    <th scope="col" width="21%">元素居左</th>
+                    <th scope="col" width="21%">元素居右</th>
+                    <th scope="col" width="21%">元素居中</th>
+                    <th scope="col" width="21%">清除浮动</th>
+                  </tr> <tbody>
+                  <tr>
+                    <td>class</td>
+                    <td>.left</td>
+                    <td>.right</td>
+                    <td>.center</td>
+                    <td>.clear</td>
+                  </tr> </tbody>
+                </table>
+              </div>
+            </li>
+            <li >
+              <div class="example-dome">
+                <div class="clear">
+                  <div class="left" style="padding:5px;background:#e1e1e1;">向左浮动</div>
+                </div>
+                <div class="clear">
+                  <div class="center" style="padding:5px; width:60px;background:#e1e1e1;">居中对齐</div>
+                </div>
+                <div class="clear">
+                  <div class="right" style="padding:5px;background:#e1e1e1;">向左浮动</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div  class="example-code">
+                <div class="text-indent">
+                  <p><em>&lt;</em> div class="left" style="padding:5px;background:#e1e1e1;"<em>&gt;</em> 向左浮动 <em>&lt;/</em> div <em>&gt;</em> </p>
+                  <p><em>&lt;</em>div class="center" style="padding:5px; width:60px;background:#e1e1e1;"<em>&gt;</em>居中对齐<em>&lt;/</em>div<em>&gt;</em></p>
+                  <P><em>&lt;</em>div class="right"  style="padding:5px;background:#e1e1e1;"<em>&gt;</em>向左浮动<em>&lt;/</em>div<em>&gt;</em></P>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <p class="panel-note">2、文本对齐</p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-header">
+          <tr>
+            <th scope="col" width="10%">&nbsp;</th>
+            <th scope="col" width="15%">文本水平居左</th>
+            <th scope="col" width="15%">文本水平居右</th>
+            <th scope="col" width="15%">文本水平居中</th>
+            <th scope="col" width="15%">文本垂直居顶</th>
+            <th scope="col" width="15%">文本垂直居底</th>
+            <th scope="col" width="15%">文本垂直居中</th>
+          </tr> <tbody>
+          <tr>
+            <td>class</td>
+            <td>.text-fl</td>
+            <td>.text-fr</td>
+            <td>.text-center</td>
+            <td>.text-top</td>
+            <td>.text-bottom</td>
+            <td>.text-middle</td>
+          </tr> </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="wgt-code">
+          <ul class="wgt-code-title">
+            <li class="on"><span>Demo</span> </li>
+            <li><span>Html</span> </li>
+          </ul>
+          <ul class="wgt-code-box">
+            <li class="on">
+              <div class="example-dome">
+                <div class="col-sm-4 text-fl">文本水平居左</div>
+                <div class="col-sm-4 text-center">文本水平居中</div>
+                <div class="col-sm-4 text-fr">文本水平居右</div>
+              </div>
+            </li>
+            <li>
+              <div  class="example-code">
+                <div class="text-indent">
+                  <P><em>&lt;</em>div class="col-sm-4 text-fl"<em>&gt;</em>文本水平居左<em>&lt;/</em>div<em>&gt;</em></P>
+                  <P><em>&lt;</em>div class="col-sm-4 text-center"<em>&gt;</em>文本水平居中<em>&lt;/</em>div<em>&gt;</em></P>
+                  <P><em>&lt;</em>div class="col-sm-4 text-fr"<em>&gt;</em>文本水平居右<em>&lt;/</em>div<em>&gt;</em></P>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="wgt-code">
+          <ul class="wgt-code-title">
+            <li class="on"><span>Demo</span> </li>
+            <li><span>Html</span> </li>
+          </ul>
+          <ul class="wgt-code-box">
+            <li class="on">
+              <div class="example-dome" style="height:100px;">
+                <div class="col-sm-4"><img src="../../../temporary/img/example.jpg"><span class="text-top">文本垂直居顶</span></div>
+                <div class="col-sm-4"><img src="../../../temporary/img/example.jpg"><span class="text-bottom">文本垂直居底</span></div>
+                <div class="col-sm-4"><img src="../../../temporary/img/example.jpg"><span class="text-middle">文本垂直居中</span></div>
+              </div>
+            </li>
+            <li>
+              <div  class="example-code">
+                <div class="text-indent">
+                  <P><em>&lt;</em>div class="col-sm-4"<em>&gt;</em><em>&lt;</em>img src="example.jpg"<em>&gt;</em><em>&lt;</em>span class="text-top"<em>&gt;</em>文本垂直居顶<em>&lt;/</em>span<em>&gt;</em><em>&lt;/</em>div<em>&gt;</em></P>
+                  <P><em>&lt;</em>div class="col-sm-4"<em>&gt;</em><em>&lt;</em>img src="example.jpg"<em>&gt;</em><em>&lt;</em>span class="text-bottom"<em>&gt;</em>文本垂直居底<em>&lt;/</em>span<em>&gt;</em><em>&lt;/</em>div<em>&gt;</em></P>
+                  <P><em>&lt;</em>div class="col-sm-4"<em>&gt;</em><em>&lt;</em>img src="example.jpg"<em>&gt;</em><em>&lt;</em>span class="text-middle"<em>&gt;</em>文本垂直居中<em>&lt;/</em>span<em>&gt;</em><em>&lt;/</em>div<em>&gt;</em></P>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- InstanceEndEditable --> </div>
+<div class="footer">2015-12 © 2016-12 Modern by DHC. 『The youth waystation, the dream began here!』</div>
+<!-- InstanceBeginEditable name="foot" --><!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

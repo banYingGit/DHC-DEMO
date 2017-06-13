@@ -1,0 +1,347 @@
+/* 页面基本 color */
+@gray-base: #000;
+@gray-darker: lighten(@gray-base, 15%);
+@gray-dark: lighten(@gray-base, 30%);
+@gray: lighten(@gray-base, 45%);
+@gray-light: lighten(@gray-base, 60%);
+@gray-lighter: lighten(@gray-base, 93.5%);
+
+@brand-primary: #367FA9;
+@brand-secondary: #3C8DBC;
+@brand-custom: #F39C12;
+
+/* 页面样式 */
+@body-bg: #fff;
+@mask: rgba(0, 0, 0, 0.6);
+@text-color: @gray-dark;
+@link-color: @brand-primary;
+@link-hover-color: darken(@link-color, 15%);
+@link-hover-decoration: underline;
+@font-family: "微软雅黑", "Microsoft Yahei", "simsun";
+@font-size-base: 12px;
+
+@container-height: 100%;
+@footer-height: 35px;
+
+/*** 页面布局 ***/
+/* 垂直 */
+@vertical-small: 2px;
+@vertical-base: 5px;
+@vertical-large: 10px;
+
+/* 水平 */
+@horizontal-small: 2px;
+@horizontal-base: 5px;
+@horizontal-large: 10px;
+
+@left: left;
+@right: right;
+
+/*   -- Z-index master list                            start  */
+@zindex-modal: 1050;
+@zindex-message: 1060;
+@zindex-process: 1070;
+/*   -- Z 轴显示 警告:为了组件能够一起使用，避免定制这些值。 end    */
+
+/* 分辨率 */
+@screen-xs: 992px;
+@screen-sm: 1180px;
+@screen-md: 1366x;
+@screen-lg: 1440px;
+
+/* header */
+@header-height: 50px;
+@header-spacing: 5px;
+@headerbg: @brand-primary;
+@header-logo-width: 200px;
+@header-nav-width: 140px;
+@header-nav-color: #fff;
+@header-mask-color: rgba(0, 0, 0, 0.1);
+@header-search-width: 250px;
+@header-search-height: 30px;
+@header-radius: 15px;
+@header-remind-width: 50px;
+@header-remind-box-width: 350px;
+@header-remind-box-height: 270px;
+@header-remind-title-height: 35px;
+@header-remind-main-height: 200px;
+@header-remind-list-li-height: 30px;
+@header-user-box-width: 180px;
+/* leftMenu */
+@left-menu-width: 200px;
+@left-menu-bg: #222;
+@left-menu-spacing: 5px;
+@left-menu-color: #fff;
+@left-menu-nav-height: 40px;
+@left-menu-nav-height-two: 30px;
+@left-menu-one-spacing: 15px;
+@left-menu-mask: rgba(255, 255, 255, 0.1);
+
+/* login */
+
+/* button */
+@btn-default-color: @brand-primary;
+@btn-default-bg: #EBF1F6;
+@btn-default-border: darken(@btn-default-bg, 5%);
+
+@btn-primary-color: #fff;
+@btn-primary-bg: @brand-primary;
+@btn-primary-border: darken(@btn-primary-bg, 5%);
+
+@btn-secondary-color: #fff;
+@btn-secondary-bg: @brand-secondary;
+@btn-secondary-border: darken(@btn-secondary-bg, 5%);
+
+@btn-default-alt-color: @brand-primary;
+@btn-default-alt-bg: #fff;
+@btn-default-alt-border: darken(@gray-lighter, 10%);
+
+@btn-primary-alt-color: @brand-primary;
+@btn-primary-alt-bg: #fff;
+@btn-primary-alt-border: darken(@btn-primary-alt-color, 5%);
+
+@btn-secondary-alt-color: @brand-secondary;
+@btn-secondary-alt-bg: #fff;
+@btn-secondary-alt-border: darken(@btn-secondary-alt-color, 5%);
+
+@btn-link-color: darken(@brand-primary, 5%);
+
+@btn-xs-vertical: 1px;
+@btn-sm-vertical: 3px;
+@btn-md-vertical: 5px;
+@btn-lg-vertical: 8px;
+
+@btn-xs-horizontal: 5px;
+@btn-sm-horizontal: 10px;
+@btn-md-horizontal: 20px;
+@btn-lg-horizontal: 35px;
+
+@btn-round: 3px;
+
+/* table */
+@table-cell-padding: 5px;
+@table-cell-padding-lg: 10px;
+@table-bg: transparent;
+@table-bg-accent: #f1f1f1;
+@table-header-bg: #EBF1F6;
+@table-bg-hover: #EBF1F6;
+@table-border-color: darken(@gray-lighter, 10%);
+@table-th-color: @gray-darker;
+@table-td-color: @gray-dark;
+
+/* 导航 */
+@nav-width: 1200px;
+@nav-height: 40px;
+@nav-list-width: 120px;
+@nav-bg: @brand-secondary;
+@nav-border: darken(@gray-lighter, 10%);
+@nav-border-accent: @brand-secondary;
+@nav-border-width: 2px;
+@nav-color: #fff;
+@nav-color-accent: @brand-secondary;
+@nav-font-size: 14px;
+@nav-round: 10px;
+@nav-hover: rgba(0, 0, 0, 0.2);
+@nav-child-color: #fff;
+@nav-child-color-accent: @brand-secondary;
+@nav-child-bg: #fff;
+@nav-arrow-size: 10px;
+@nav-arrow-color: #fff;
+
+/* 表单 */
+@form-color: @gray;
+@form-border: darken(@gray-lighter, 10%);
+@form-border-focus: #3bb4f2;
+@form-bg: #fff;
+@form-disabled: @gray-lighter;
+@form-round: 3px;
+@form-base-height: 30px;
+@form-large-height: 80px;
+@form-tab-width: 100px;
+@check-default-size: 18px;
+@radio-default-size: 18px;
+@form-color-other: #fff;
+@on-off-width: 60px;
+@on-off-height: 25px;
+@on-off-padding: 3px;
+
+/* 选项卡 */
+@tab-width: 100px;
+@tab-height: 30px;
+@tab-v: 10px;
+@tab-h: 10px;
+@tab-border-width: 2px;
+@tab-border-color: darken(@gray-lighter, 10%);
+@tab-border-color-accent: @brand-primary;
+@tab-bg: #fff;
+@tab-accent-bg: @brand-primary;
+@tab-color: @gray;
+@tab-color-accent : @brand-primary;
+@tab-round: 5px;
+@tab-body-border-color: darken(@gray-lighter, 10%);
+
+/* 下拉菜单 */
+@select-height: 30px;
+@select-spacing: 3px;
+@select-border-color: darken(@gray-lighter, 10%);
+@select-border-color-accent: @brand-primary;
+@select-bg: #fff;
+@select-color: @gray;
+
+/* 数量盒子 */
+@num-h-sm-width: 75px;
+@num-h-sm-height: 25px;
+@num-h-width: 110px;
+@num-h-height: 35px;
+@num-v-sm-width: 45px;
+@num-v-sm-height: 35px;
+@num-v-width: 70px;
+@num-v-height: 40px;
+@num-border: darken(@gray-lighter, 10%);
+@num-border-accent: @brand-primary;
+@num-bg: #fff;
+@num-color: @gray;
+
+/* 弹出窗口 modal */
+@modal-width: 600px;
+@modal-width-lg: 800px;
+@modal-height: 320px;
+@modal-height-lg: 500px;
+@modal-title-height: 35px;
+@modal-spacing: 3px;
+@modal-border-width: 1px;
+@modal-border: lighten(@gray-light, 10%);
+@modal-border-accent: @brand-primary;
+@modal-bg: #fff;
+@modal-bg-accent: @brand-primary;
+@modal-color-title: #fff;
+@modal-round: 5px;
+
+/* 弹出提示 message */
+@message-width: 500px;
+@message-height: 250px;
+@message-title-height: 35px;
+@message-spacing: 3px;
+@message-border-width: 1px;
+@message-border: lighten(@gray-light, 10%);
+@message-bg: #fff;
+@message-color-title: #fff;
+@message-round: 5px;
+@message-info: #0084ff;
+@message-warning: #F39801;
+@message-error: #fd365b;
+@message-complete: #22ac38;
+@message-font-size: 18px;
+@message-font-color: @gray;
+
+/* 进度条 process */
+@process-width: 100%;
+@process-height: 15px;
+@process-bg: @gray-lighter;
+@process-bg-accent: @brand-secondary;
+@process-color: #fff;
+@process-color-accent: @gray;
+@process-pop-width: 500px;
+@process-pop-spacing: 50px;
+@process-pop-round: 5px;
+
+/* 轮播图 banner */
+@banner-width: 100%;
+@banner-height: 380px;
+@banner-color: #fff;
+@banner-arrow-width: 50px;
+@banner-arrow-height: 50px;
+@banner-arrow-bg: rgba(0, 0, 0, 0.3);
+@banner-arrow-bg-accent: rgba(0, 0, 0, 0.6);
+@banner-arrow-round: 50%;
+@banner-arrow-font: 20px;
+@banner-arrow-spacing: 10%;
+@banner-nav-height: 50px;
+@banner-nav-bg: rgba(0, 0, 0, 0.5);
+@banner-nav-font: 16px;
+
+@banner-nav-img-spacing: 5px;
+@banner-nav-img-width: 35px;
+@banner-nav-img-height: 35px;
+
+@banner-nav-point-spacing: 3px;
+@banner-nav-point-width: 15px;
+@banner-nav-point-width-accent: 45px;
+@banner-nav-point-height: 15px;
+@banner-nav-point-round: @banner-nav-point-height/2;
+@banner-nav-point-bg: #ddd;
+@banner-nav-point-bg-accent: @brand-secondary;
+
+//地址选择（商品详情页面）
+@address-bg: #fff;
+@address-bg-accent: @brand-secondary;
+@address-color: @gray;
+@address-color-accent: #fff;
+@address-border-color: lighten(@gray-light, 35%);
+@address-border-color-accent: @brand-secondary;
+@address-border-width: 1px;
+@address-border-width-accent: 2px;
+@address-box-width: 200px;
+@address-box-height: 30px;
+
+//选择
+@choose-width: 100%;
+@choose-height: 500px;
+@choose-bg: #fff;
+@choose-border-color: lighten(@gray-light, 35%);
+@choose-spacing: 15px;
+@choose-box-width: 44%;
+@choose-operation-width: 12%;
+@choose-icon-width: 50px;
+@choose-icon-height: 50px;
+@choose-icon-font: 20px;
+@choose-icon-color: @brand-secondary;
+
+//自动补全
+@autoCompleter-bg: #fff;
+@autoCompleter-border-color: lighten(@gray-light, 25%);
+@autoCompleter-ul-height: 320px;
+@autoCompleter-li-bg: lighten(@brand-secondary, 25%);
+@autoCompleter-li-color: @gray-darker;
+@autoCompleter-li-height: 25px;
+@autoCompleter-spacing: 10px;
+
+//左右互选
+@orso-elect-height: 400px;
+@orso-elect-color-accent: @brand-primary;
+@orso-elect-box-width: 300px;
+@orso-elect-box-border-color: lighten(@gray-light, 25%);
+@orso-elect-btn-width: 70px;
+@orso-elect-btn-size: 35px;
+@orso-elect-title-color: #fff;
+
+//点击评价
+@ratyHeight: 20px;
+@ratyWidth: 16px;
+@raty-spacing: 2px;
+
+//上传图片
+@uploadPictureW: 542px;
+@uploadPicture-border-color: lighten(@gray-light, 25%);
+@uploadPicture-bg: #fff;
+@uploadPicture-spacing: 10px;
+@uploadPicture-li-width: 120px;
+@uploadPicture-li-height: 120px;
+@uploadPicture-li-spacing: 5px;
+@uploadPicture-box-size: @uploadPicture-li-width / 2;
+@uploadPicture-box-size-half: -@uploadPicture-box-size / 2;
+@uploadPictureDel-height: 25px;
+@uploadPictureBtn: @brand-secondary;
+
+//翻页
+@turn-page-height: 25px;
+@turn-page-spacing: 5px;
+@turn-page-color: lighten(@gray-light, 20%);
+@turn-page-color-accent: @brand-primary;
+@turn-page-color-disabled: lighten(@gray-light, 25%);
+@turn-page-border-radius: 2px;
+
+//图片放大
+@imageZoom-border-color: @gray-lighter;
+@imageZoom-mask-bg: rgba(255, 223, 3, 0.3);
+@imageZoom-mask-border: rgba(255, 223, 3, 0.6);

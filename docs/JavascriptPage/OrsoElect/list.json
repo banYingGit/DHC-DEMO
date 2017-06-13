@@ -1,0 +1,33 @@
+[
+    {
+        "name":"yunying",
+        "category":"运营",
+      "type":1
+    },
+    {
+        "name":"caiwu",
+        "category":"财务",
+      "type":1
+    },
+    {
+        "name":"bianji",
+        "category":"编辑",
+      "type":1
+    },
+    {
+        "name":"wuliu",
+        "category":"物流",
+      "type":1
+    },
+    {
+        "name":"guanliyuan",
+        "category":"超级管理员",
+      "type":1
+    },
+    {
+        "name":"kefu",
+        "category":"客服",
+      "type":1
+    }
+]
+

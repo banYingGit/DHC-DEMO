@@ -1,0 +1,820 @@
+
+<h2 class="page-title" id="pageStyle">定制并下载</h2>
+<div class="panel">
+  <h3 class="panel-title">定制并下载组件库</h3>
+  <p class="panel-note">通过自定义 Js组件和Less 变量，定制一份属于项目特有的版本。</p>
+  <h3 class="panel-title-custom" id="selectWgt"><a href="javascript:void(0)" target="_blank"
+                                                         class="wgt-btn right">选择 \ 取消全部</a>组件选择</h3>
+  <table width="80%" border="0" cellspacing="0" cellpadding="0" class="wgt-table m-l-10 m-t-10">
+    <tr>
+      <th scope="col" width="33%">Css 组件</th>
+      <th scope="col" width="33%">Js 组件</th>
+      <th scope="col">项目组件</th>
+    </tr>
+    <tr>
+      <td><div class="check-group">
+          <div class="row">
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-pageStyle" name="css" checked="">
+              <label for="css-pageStyle"></label>
+              <span class="left m-lr-5">页面样式</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-nav" name="css">
+              <label for="css-nav"></label>
+              <span class="left m-lr-5">导航</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-menu-wgt" name="css">
+              <label for="css-menu-wgt"></label>
+              <span class="left m-lr-5">菜单</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-tab" name="css">
+              <label for="css-tab"></label>
+              <span class="left m-lr-5">选项卡</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-select" name="css">
+              <label for="css-select"></label>
+              <span class="left m-lr-5">下拉菜单</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-NumberBox" name="css">
+              <label for="css-NumberBox"></label>
+              <span class="left m-lr-5">数量盒子</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-button" name="css">
+              <label for="css-button"></label>
+              <span class="left m-lr-5">按钮</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-form" name="css">
+              <label for="css-form"></label>
+              <span class="left m-lr-5">表单</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-table" name="css">
+              <label for="css-table"></label>
+              <span class="left m-lr-5">表格</span></div>
+            <div class="col-lg-6">
+              <input type="checkbox" id="css-font" name="css">
+              <label for="css-font"></label>
+              <span class="left m-lr-5">字体库</span></div>
+          </div>
+        </div></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <h3 class="panel-title-custom m-t-10" id="pageStyle">Less - 页面样式</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 页面基本 color */</p>
+    <label class="col-lg-2 col-md-3"> <span>@gray-base</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#000">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@gray-darker</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-base, 15%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@gray-dark</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-base, 30%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@gray</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-base, 35%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@gray-light</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-base, 60%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@gray-lighter</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-base, 93.5%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@brand-primary</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#1d93ed">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@brand-secondary</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#6699FF">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@brand-custom</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#FF7E00">
+    </label>
+  </div>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 页面样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@body-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@mask</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="alpha(rgba(0, 0, 0, 0.6))">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@text-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray-dark">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@link-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@link-hover-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@link-color, 15%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@link-hover-decoration</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="underline">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@font-family</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value='"微软雅黑", "Microsoft Yahei", "simsun"'>
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@font-size-base</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="12px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@container-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="100%">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@footer-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+  </div>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 页面布局 */</p>
+    <label class="col-lg-2 col-md-3"><span>@vertical-small</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="2px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@vertical-base</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@vertical-large</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@horizontal-small</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="2px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@horizontal-base</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@horizontal-large</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="left">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@right</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="right">
+    </label>
+  </div>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 分辨率 */</p>
+    <label class="col-lg-2 col-md-3"> <span>@screen-xs</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="992px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@screen-sm</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="1180px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@screen-md</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="1366px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@screen-lg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="1440px">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="header">Less - 头部 Header</h3>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 头部样式 */</p>
+    <label class="col-lg-2 col-md-3"> <span>@header-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="50px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@headerbg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-logo-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="200px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-nav-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="140px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-nav-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-mask-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="rgba(0, 0, 0, 0.1)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-search-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="250px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-search-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="30px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-radius</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="15px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-remind-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="50px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-remind-box-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="350px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-remind-box-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="270px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-remind-title-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-remind-main-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="200px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-remind-list-li-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="30px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-user-box-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="180px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@header-user-box-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="160px">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="leftMenu">Less - 左侧菜单 leftMenu</h3>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 左侧菜单样式 */</p>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="200px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#222">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-nav-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="40px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-nav-height-two</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="30px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-one-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="15px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@left-menu-mask</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="rgba(255, 255, 255, 0.1)">
+    </label>
+   
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="button">Less - 按钮 Button</h3>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 按钮样式 */</p>
+    <label class="col-lg-2 col-md-3"> <span>@btn-default-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-default-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#EBF1F6">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-default-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@btn-default-bg, 5%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-primary-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-primary-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-primary-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@btn-primary-bg, 5%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-secondary-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-secondary-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-secondary-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@btn-secondary-bg, 5%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-default-alt-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-default-alt-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-default-alt-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@gray-lighter, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-primary-alt-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-primary-alt-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-primary-alt-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@btn-primary-alt-color, 5%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-secondary-alt-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-secondary-alt-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-secondary-alt-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@btn-secondary-alt-color, 5%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-link-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@brand-primary, 5%)">
+    </label>
+  </div>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 按钮尺寸 */</p>
+    <label class="col-lg-2 col-md-3"><span>@btn-xs-vertical</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="1px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-sm-vertical</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-md-vertical</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-lg-vertical</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="8px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-xs-horizontal</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-sm-horizontal</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-md-horizontal</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="20px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@btn-lg-horizontal</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@btn-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+  </div>
+    <h3 class="panel-title-custom m-t-10" id="table">Less - 表格 Table</h3>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 表格基本样式 */ </p>
+    <label class="col-lg-2 col-md-3"> <span>@table-cell-padding</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@table-cell-padding-lg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@table-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="transparent">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@table-bg-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#f1f1f1">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@table-header-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#EBF1F6">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@table-bg-hover</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#EBF1F6">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@table-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@gray-lighter, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@table-th-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray-darker">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@table-td-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray-dark">
+    </label>
+  </div>
+
+
+  <h3 class="panel-title-custom m-t-10" id="nav">Less - 导航 Nav</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 导航基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@nav-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="1200px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="40px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-list-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="120px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@gray-lighter, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-border-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-border-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="2px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-color-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-font-size</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="14px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-hover</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="rgba(0, 0, 0, 0.2)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-child-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-child-color-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-child-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-arrow-size</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@nav-arrow-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+  </div>
+    <h3 class="panel-title-custom m-t-10" id="form">Less - 表单 Form</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 表单基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@form-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@gray-lighter, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-border-focus</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#3bb4f2">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-disabled</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray-lighter">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-base-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="30px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-large-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="80px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@form-tab-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="100px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@check-default-size</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="18px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@radio-default-size</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="18px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@formt-color-other</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@on-off-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="60px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@on-off-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="25px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@on-off-padding</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="tab">Less - 选项卡 Tab</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 选项卡基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@tab-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="100px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="30px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-v</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-h</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-border-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="2px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-border-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@gray-lighter, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-border-color-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-accent-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-color-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@tab-body-border-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value=" darken(@gray-lighter, 10%)">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="select">Less - 下拉菜单 Select</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 下拉菜单基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@select-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="30px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@select-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@select-border-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@gray-lighter, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@select-border-color-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@select-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@select-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="num">Less - 数量盒子 Num</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 数量盒子基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@num-h-sm-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="75px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-h-sm-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="25px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-h-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="110px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-h-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-v-sm-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="45px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-v-sm-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-v-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="70px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-v-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="40px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="darken(@gray-lighter, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-border-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@num-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="modal">Less - 模态框 Modal</h3>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 模态框基本样式 */ </p>
+    <label class="col-lg-2 col-md-3"><span>@modal-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="600px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-width-lg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="900px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@modal-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="320px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@modal-height-lg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="600px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-title-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@modal-border-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="1px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-light, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-border-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-bg-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-primary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@modal-color-title</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@modal-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="message">Less - 弹出提示框 Message</h3>
+  <div class="row  variable">
+    <p class="panel-note m-t-10">/* 弹出提示框基本样式 */ </p>
+    <label class="col-lg-2 col-md-3"> <span>@message-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="600px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@message-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="620px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-title-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-border-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="1px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-border</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-light, 10%)">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@message-color-title</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@message-info</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#0084ff">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-warning</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#F39801">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-error</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fd365b">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@message-complete</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#22ac38">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-font-size</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="18px">
+    </label>
+    <label class="col-lg-2 col-md-3"> <span>@message-font-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="process">Less - 进度条 Process</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 进度条基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@process-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="100%">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="15px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray-lighter">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-bg-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-color-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-pop-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="500px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-pop-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="50px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@process-pop-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+  </div>
+  <h3 class="panel-title-custom m-t-10" id="banner">Less - 轮播图 Banner</h3>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 轮播图基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@banner-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="100%">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="380px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-arrow-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="50px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-arrow-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="50px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-arrow-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="rgba(0, 0, 0, 0.3)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-arrow-bg-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="rgba(0, 0, 0, 0.6)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-arrow-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="50%">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-arrow-font</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="20px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-arrow-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10%">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="50px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="rgba(0, 0, 0, 0.5)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-font</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="16px">
+    </label>
+  </div>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 轮播图缩略图样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-img-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="5px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>wi@banner-nav-img-widthdth</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-img-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="35px">
+    </label>
+  </div>
+  <div class="row variable">
+    <p class="panel-note m-t-10">/* 轮播图小点点样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-point-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="3px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-point-width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="15px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-point-width-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="45px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-point-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="15px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-point-round</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@banner-nav-point-height/2">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-point-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#ddd">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@banner-nav-point-bg-accent</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@brand-secondary">
+    </label>
+  </div>
+  <div class="row variable">
+    <h3 class="panel-title-custom m-t-10" id="banner">Less - 自动补全 autoCompleter</h3>
+    <p class="panel-note m-t-10">/* 自动补全基本样式 */</p>
+    <label class="col-lg-2 col-md-3"><span>@autoCompleter-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="#fff">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@autoCompleter-border-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@gray-light, 35%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@autoCompleter-ul-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="320px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@autoCompleter-li-bg</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="lighten(@brand-secondary, 25%)">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@autoCompleter-li-color</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="@gray-darker">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@autoCompleter-li-height</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="25px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>@autoCompleter-spacing</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="10px">
+    </label>
+    <label class="col-lg-2 col-md-3"><span>width</span>
+      <input name="testForm" type="text" class="form-box m-t-10" value="100">
+    </label>
+  </div>
+</div>
+<div class="panel-menu"> <a href="#pageStyle">页面样式</a><a href="#header">头部</a><a href="#button">按钮</a><a href="#form">表单</a><a href="#table">表格</a><a href="#nav">导航</a><a href="#select">选项卡</a> <a href="#select">下拉菜单</a><a href="#num">数量盒子</a><a href="#modal">模态框</a><a href="#message">弹出提示框</a><a href="#process">进度条</a><a href="#banner">轮播图</a> </div>

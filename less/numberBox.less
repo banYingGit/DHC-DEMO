@@ -1,0 +1,108 @@
+// 数量盒子
+.num {
+  position: relative;
+  display: block;
+  border: solid 1px @num-border;
+  background: @num-bg;
+  overflow: hidden;
+  > .num-input {
+    display: block;
+    height: inherit;
+    background: inherit;
+    text-align: center;
+    color: @num-color;
+    line-height: inherit;
+  }
+  > .num-add, > .num-reduce {
+    position: absolute;
+    display: block;
+    background: inherit;
+    text-align: center;
+    font-size: 16px;
+    font-family: serif;
+    color: @num-color;
+    cursor: pointer;
+
+  }
+  // 数量盒子水平排列
+  &.num-horizontal {
+    width: @num-h-width;
+    height: @num-h-height;
+    line-height: @num-h-height;
+
+    > .num-input {
+      margin: 0 auto;
+      width: 50%;
+    }
+    > .num-add, > .num-reduce {
+      top: 0;
+      width: 25%;
+      height: inherit;
+      line-height: inherit;
+    }
+    > .num-add {
+      right: 0;
+      border-left: solid 1px @num-border;
+    }
+    > .num-reduce {
+      left: 0;
+      border-right: solid 1px @num-border;
+
+    }
+    //垂直排列小号
+    &.num-sm {
+      width: @num-h-sm-width;
+      height: @num-h-sm-height;
+      line-height: @num-h-sm-height;
+    }
+  }
+  // 数量盒子垂直排列
+  &.num-vertical {
+    width: @num-v-width;
+    height: @num-v-height;
+    line-height: @num-v-height;
+
+    > .num-input {
+      width: 65%;
+      border-right: solid 1px @num-border;
+    }
+    > .num-add, > .num-reduce {
+      right: 0;
+      width: 35%;
+      height: 50%;
+
+    }
+    > .num-add {
+      top: 0;
+
+    }
+    > .num-reduce {
+      bottom: 0;
+      border-top: solid 1px @num-border;
+    }
+    //垂直排列小号
+    &.num-sm {
+      width: @num-v-sm-width;
+      height: @num-v-sm-height;
+      line-height: @num-v-sm-height;
+    }
+  }
+  // 盒子状态
+  //    不可点击
+  > input[disabled] {
+    background: @gray-lighter;
+    color: darken(@gray-lighter, 20%);
+    cursor: auto;
+  }
+  //    校验提示
+  &.num-error {
+    border-color: red;
+    box-shadow: 0 0 1px red;
+  }
+  //    获得焦点
+  &.num-focus {
+    border-color: @num-border-accent;
+    box-shadow: 0 0 1px @num-border-accent;
+  }
+
+}

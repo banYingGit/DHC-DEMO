@@ -1,0 +1,448 @@
+/* 去除浏览器默认样式 */
+html, body, div,
+h1, h2, h3, h4, h5, h6,
+header, menu,
+p, dl, dt, dd, ul, li,
+form, button, input, textarea, select,
+table, th, td, tr,
+img, span, strong, em, u, i, b, {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  resize: none;
+  color: @gray-base;
+  font-family: @font-family;
+  font-size: @font-size-base;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 1300px;
+  height: 100%;
+  overflow: auto;
+  background: url("../images/bodyBg.jpg");
+}
+
+.body-hidden {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  min-height: @container-height;
+  padding: @header-height 0 @footer-height @left-menu-width;
+  .transition(all .5s);
+}
+
+.container-box {
+  margin: 20px;
+  padding: 0 20px 20px 20px;
+  background: #fff;
+}
+
+.page-title {
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  min-width: 1300px;
+  height: @footer-height;
+  background: lighten(@gray-base, 99.9%);
+  border-top: 1px solid lighten(@gray-base, 80%);
+  text-align: center;
+  line-height: @footer-height;
+  color: #899DC1;
+}
+
+/* Links */
+a {
+  color: @link-color;
+  outline: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: @link-hover-color;
+  text-decoration: @link-hover-decoration;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+/*** 页面布局 ***/
+.row {
+  clear: both;
+  width: 100%;
+
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 网格布局*/
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  padding: @vertical-large  @horizontal-large;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
+.col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left
+}
+
+.col-xs-12 {
+  width: 100%
+}
+
+.col-xs-11 {
+  width: 91.66666667%
+}
+
+.col-xs-10 {
+  width: 83.33333333%
+}
+
+.col-xs-9 {
+  width: 75%
+}
+
+.col-xs-8 {
+  width: 66.66666667%
+}
+
+.col-xs-7 {
+  width: 58.33333333%
+}
+
+.col-xs-6 {
+  width: 50%
+}
+
+.col-xs-5 {
+  width: 41.66666667%
+}
+
+.col-xs-4 {
+  width: 33.33333333%
+}
+
+.col-xs-3 {
+  width: 25%
+}
+
+.col-xs-2 {
+  width: 16.66666667%
+}
+
+.col-xs-1 {
+  width: 8.33333333%
+}
+
+@media (min-width: @screen-sm) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+  .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left
+  }
+
+  .col-sm-12 {
+    width: 100%
+  }
+
+  .col-sm-11 {
+    width: 91.66666667%
+  }
+
+  .col-sm-10 {
+    width: 83.33333333%
+  }
+
+  .col-sm-9 {
+    width: 75%
+  }
+
+  .col-sm-8 {
+    width: 66.66666667%
+  }
+
+  .col-sm-7 {
+    width: 58.33333333%
+  }
+
+  .col-sm-6 {
+    width: 50%
+  }
+
+  .col-sm-5 {
+    width: 41.66666667%
+  }
+
+  .col-sm-4 {
+    width: 33.33333333%
+  }
+
+  .col-sm-3 {
+    width: 25%
+  }
+
+  .col-sm-2 {
+    width: 16.66666667%
+  }
+
+  .col-sm-1 {
+    width: 8.33333333%
+  }
+}
+
+@media (min-width: @screen-md) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+  .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left
+  }
+
+  .col-md-12 {
+    width: 100%
+  }
+
+  .col-md-11 {
+    width: 91.66666667%
+  }
+
+  .col-md-10 {
+    width: 83.33333333%
+  }
+
+  .col-md-9 {
+    width: 75%
+  }
+
+  .col-md-8 {
+    width: 66.66666667%
+  }
+
+  .col-md-7 {
+    width: 58.33333333%
+  }
+
+  .col-md-6 {
+    width: 50%
+  }
+
+  .col-md-5 {
+    width: 41.66666667%
+  }
+
+  .col-md-4 {
+    width: 33.33333333%
+  }
+
+  .col-md-3 {
+    width: 25%
+  }
+
+  .col-md-2 {
+    width: 16.66666667%
+  }
+
+  .col-md-1 {
+    width: 8.33333333%
+  }
+}
+
+@media (min-width: @screen-lg) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+  .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left
+  }
+
+  .col-lg-12 {
+    width: 100%
+  }
+
+  .col-lg-11 {
+    width: 91.66666667%
+  }
+
+  .col-lg-10 {
+    width: 83.33333333%
+  }
+
+  .col-lg-9 {
+    width: 75%
+  }
+
+  .col-lg-8 {
+    width: 66.66666667%
+  }
+
+  .col-lg-7 {
+    width: 58.33333333%
+  }
+
+  .col-lg-6 {
+    width: 50%
+  }
+
+  .col-lg-5 {
+    width: 41.66666667%
+  }
+
+  .col-lg-4 {
+    width: 33.33333333%
+  }
+
+  .col-lg-3 {
+    width: 25%
+  }
+
+  .col-lg-2 {
+    width: 16.66666667%
+  }
+
+  .col-lg-1 {
+    width: 8.33333333%
+  }
+}
+
+/* 辅助布局 */
+/* 浮动布局 */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 文本布局 */
+.text-fl {
+  text-align: left;
+}
+
+.text-fr {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-top {
+  vertical-align: top;
+}
+
+.text-bottom {
+  vertical-align: bottom;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+/* 样式变量 */
+.animation(@val) {
+  animation: @val;
+  -moz-animation: @val;
+  -webkit-animation: @val;
+  -o-animation: @val;
+}
+
+.transform (@val) {
+  transform: @val;
+  -moz-transform: @val;
+  -webkit-transform: @val;
+  -o-transform: @val;
+}
+
+.transition (@val) {
+  transition: @val;
+  -moz-transition: @val;
+  -webkit-transition: @val;
+  -o-transition: @val;
+}
+
+
+/* 间距 */
+.m-10 {
+  margin: 10px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-r-0 {
+  padding-right: 0;
+}
+
+.p-t-0 {
+  padding-top: 0;
+}

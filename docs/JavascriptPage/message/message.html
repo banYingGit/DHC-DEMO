@@ -1,0 +1,286 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/DEMO.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+    <title>DHC-DEMO</title>
+    <!-- InstanceEndEditable -->
+<link rel="stylesheet/less" href="../../../less/KIT.less" id='KIT'/>
+<link rel="stylesheet" type="text/css" href="../../../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../../../fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="../../../dist/js/scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="../../../temporary/temporary.css">
+<link rel="stylesheet" type="text/css" href="../../../dist/css/style.css">
+<script src="../../../dist/js/jquery-1.8.3.js"></script>
+<script src="../../../js/lib/less.js"></script>
+<script src="../../../dist/js/scrollbar/perfect-scrollbar.js"></script>
+<script src="../../../dist/js/common.js"></script>
+<script src="../../../js/common/menuLoad.js"></script>
+<script src="../../../temporary/temporary.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+<header class="header">
+  <h1 class="header-log"><img src="../../../dist/img/dhc_logo.png"></h1>
+  <ul class="header-nav">
+    <li><a href="../../CssPage/PageStyle/pageStyle.html" title="Css组件"  id="CssList">Css 组件</a> </li>
+    <li><a href="../modal/modal.html" title="JavaScript 组件" id="JSList">JavaScript 组件</a> </li>
+    <li><a href="../../../pageDome/DHC-list.html" title="页面展示" target="_blank" id="pageList">页面展示</a> </li>
+    <li><a href="../../CustomPage/page/CustomPage.html" title="自定义" id="customList">自定义</a> </li>
+  </ul>
+  <ul class="header-remind">
+    <li class="header-search">
+      <input name="" type="text">
+      <i  class="icon-search" title="搜索"></i> </li>
+    <li class="header-remind" ><i class="icon-message-1" title="消息提醒"></i>
+      <div class="header-remind-box">
+        <p class="header-remind-title">您有<span>0</span>条站内信</p>
+        <div class="header-remind-main">
+          <div class="perfect-scroll">
+            <div class="p-10">
+              <ul class="header-remind-list">
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-remind-more"> <a href="#" >+ 查看更多</a></div>
+      </div>
+    </li>
+    <li class="header-user"><i class="icon-user-1"></i><span>您好！admin</span>
+      <div class="header-user-box">
+        <p>用户名：admin</p>
+        <p>上次登录时间：<br/>
+          2015-12-15  18:21:15</p>
+        <p>登录IP：172.166.201.122</p>
+        <p><a href="../../../index.html">修改密码</a></p>
+        <p><a href="../../../login.html">用户注销</a></p>
+      </div>
+    </li>
+  </ul>
+</header>
+<menu class="left-menu">
+  <div class="perfect-scroll">
+    <div class="clear" id="leftMenu"> </div>
+  </div>
+</menu>
+<div class="container"> <!-- InstanceBeginEditable name="body" -->
+    <div class="container-box">
+        <h2 class="page-title"><a href="../../../test-infra/messageAPI.html" target="_blank" class="btn btn-default">查看API</a>弹出提示
+            Message</h2>
+
+        <div class="panel">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="panel-title">1.基本使用</h3>
+
+                    <P class="panel-note">在使用过程中尚不存在提示框，仅仅当有特殊情况时才会进行提示，所以message 提示框大多数是动态创建。</P>
+
+                    <div class="wgt-code">
+                        <ul class="wgt-code-title">
+                            <li class="on"><span>Demo</span></li>
+                            <li><span>javaScript</span></li>
+                        </ul>
+                        <ul class="wgt-code-box">
+                            <li class="on">
+                                <div class="example-dome">
+                                    <div class="p-10">
+                                        <button class="btn btn-default m-t-10" id='btn-creat'>查看效果</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="example-code">
+                                    <div class="text-indent">
+                                        <P><em>&lt;</em>script<em>&gt;</em></P>
+
+                                        <div class="text-indent">
+                                            <P>$(function () {</P>
+
+                                            <div class="text-indent">
+                                                <P> var mes = $('<em>&lt;</em>div<em>&gt;</em>').message({</P>
+
+                                                <div class="text-indent">
+                                                    <P>title: "message标题",</P>
+
+                                                    <P> body: '恭喜您本次发布成功，您可以到页面管理里查看或者修改，也可以再创建一个页面设计，继续发布',</P>
+
+                                                    <P> type: 'complete',</P>
+
+                                                    <P> cls: 1 | 8 | 2 | 4,</P>
+
+                                                    <P> time: 10,</P>
+
+                                                    <P> size: 'lg' </P>
+                                                </div>
+                                                <P> }); </P>
+                                            </div>
+                                            <div class="text-indent">
+                                                <P>$('#btn-creat').click(function () {</P>
+
+                                                <div class="text-indent">
+                                                    <P>console.info('=======before============>')</P>
+
+                                                    <P>mes.message('show', function (e, fn) {</P>
+                                                </div>
+                                                <div class="text-indent">
+                                                    <P>//测试点击的是哪个按钮</P>
+
+                                                    <P> console.info('----callback>>>>', e.cls)</P>
+
+                                                    <P> if (e.cls == 2) {</P>
+
+                                                    <div class="text-indent">
+                                                        <P>fn && fn(</P>
+
+                                                        <P> console.log("22>>>>>>>>>>>>>>>>>>")</P>
+
+                                                        <P> )</P>
+                                                    </div>
+                                                    <P>}</P>
+
+                                                    <P> if (e.cls == 1) {</P>
+
+                                                    <div class="text-indent">
+                                                        <P>fn && fn(</P>
+
+                                                        <P> console.log("11>>>>>>>>>>>>>>>>>>")</P>
+
+                                                        <P> )</P>
+                                                    </div>
+                                                    <P>}</P>
+
+                                                    <P> if (e.cls == 4) {</P>
+
+                                                    <div class="text-indent">
+                                                        <P>fn && fn(</P>
+
+                                                        <P> console.log("44>>>>>>>>>>>>>>>>>>")</P>
+
+                                                        <P> )</P>
+                                                    </div>
+                                                    <P>}</P>
+
+                                                    <P> if (e.cls == 8) {</P>
+
+                                                    <div class="text-indent">
+                                                        <P>fn && fn(</P>
+
+                                                        <P> console.log("88>>>>>>>>>>>>>>>>>>")</P>
+
+                                                        <P> )</P>
+                                                    </div>
+                                                    <P>}</P>
+
+                                                    <P> console.info('---callback-------fn------==>', arguments)</P>
+
+                                                    <P>});</P>
+
+                                                    <P> console.info('=======doing============>')</P>
+
+                                                    <P>});</P>
+                                                </div>
+                                            </div>
+                                            <P> })</P>
+                                        </div>
+                                        <P><em>&lt;</em>/script<em>&gt;</em></P>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- InstanceEndEditable --> </div>
+<div class="footer">2015-12 © 2016-12 Modern by DHC. 『The youth waystation, the dream began here!』</div>
+<!-- InstanceBeginEditable name="foot" -->
+<script src="../../../js/module/jquery.message.js"></script>
+<script>
+    $(function () {
+
+        var mes = $('<div>').message({
+
+            title: "message标题",
+
+            body: '恭喜您本次发布成功，您可以到页面管理里查看或者修改，也可以再创建一个页面设计，继续发布',
+
+            type: 'complete',
+
+            time: 10,
+
+            size: 'lg'
+
+        });
+
+        mes.message('btns', (1 | 2));
+
+        $('#btn-creat').click(function () {
+
+            console.info('=======before============>')
+
+
+            mes.message('show', function (e, fn) {
+
+
+                //测试点击的是哪个按钮
+                console.info('----callback>>>>', e.cls)
+
+                if (e.cls == 2) {
+
+                    fn && fn(
+                            console.log("22>>>>>>>>>>>>>>>>>>")
+                    )
+                }
+
+                if (e.cls == 1) {
+
+
+                    fn && fn(
+                            console.log("11>>>>>>>>>>>>>>>>>>")
+                    )
+                }
+
+                if (e.cls == 4) {
+
+                    fn && fn(
+                            console.log("44>>>>>>>>>>>>>>>>>>")
+                    )
+                }
+
+                if (e.cls == 8) {
+
+                    fn && fn(
+                            console.log("88>>>>>>>>>>>>>>>>>>")
+                    )
+                }
+
+                console.info('---callback-------fn------==>', arguments)
+
+            });
+
+            console.info('=======doing============>')
+        });
+
+    })
+</script>
+
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

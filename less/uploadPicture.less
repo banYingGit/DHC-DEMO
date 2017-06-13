@@ -1,0 +1,97 @@
+.upload-picture {
+  width: @uploadPictureW;
+  border: solid 1px @uploadPicture-border-color;
+  background: @uploadPicture-bg;
+  > .upload-picture-list {
+    padding: @uploadPicture-spacing;
+    &:after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+    > li {
+      position: relative;
+      display: block;
+      float: left;
+      width: @uploadPicture-li-width;
+      height: @uploadPicture-li-height;
+      margin: @uploadPicture-li-spacing;
+      border: solid 1px  @uploadPicture-border-color;
+      overflow: hidden;
+      &.upload-picture-box {
+        &:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 0;
+          width: @uploadPicture-box-size;
+          height: @uploadPicture-box-size;
+          margin-top: @uploadPicture-box-size-half;
+          margin-left: @uploadPicture-box-size-half;
+          text-align: center;
+          line-height: @uploadPicture-box-size;
+          font-size: 30px;
+          font-weight: bold;
+          color: #ccc;
+          font-family: sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 3px;
+          content: '↑'
+        }
+        > input[type="file"] {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          display: block;
+          width: 100%;
+          height: 100%;
+          opacity: 0
+        }
+        > .upload-picture-del {
+          position: absolute;
+          bottom: -@uploadPictureDel-height;
+          left: 0;
+          z-index: 3;
+          width: 100%;
+          height: @uploadPictureDel-height;
+          padding: 0 10px;
+          background: @mask;
+          text-align: right;
+          transition: all .3s;
+          & > i {
+            font-style: normal;
+            line-height: @uploadPictureDel-height;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            letter-spacing: 1px;
+          }
+        }
+        &:hover > .upload-picture-del {
+          bottom: 0;
+        }
+        > img {
+          position: relative;
+          z-index: 1;
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+
+      }
+      &.upload-picture-btn {
+        border: solid 2px @uploadPictureBtn;
+        text-align: center;
+        line-height: calc(@uploadPicture-li-height - 20px);
+        font-size: 42px;
+        font-weight: bold;
+        color: @uploadPictureBtn;
+        cursor: pointer;
+
+      }
+
+    }
+  }
+
+}

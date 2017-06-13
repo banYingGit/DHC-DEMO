@@ -1,0 +1,118 @@
+.login-bg {
+  background: url("../dist/img/loginBg.jpg") center;
+  > .login-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 510px;
+    margin: -255px 0 0 -500px;
+    > h1 {
+      text-align: center;
+    }
+    > .login-con {
+      width: 500px;
+      height: 500px;
+      margin: 20px auto 0 auto;
+      border: solid 1px #e1e1e1;
+      background: #fff;
+      > h2 {
+        padding: 30px 0 0 0;
+        width: 380px;
+        margin: 0 auto 15px auto;
+        font-size: 24px;
+        color: #333;
+        font-weight: lighter
+      }
+
+    }
+    .login-style {
+      position: relative;
+      width: 380px;
+      height: 45px;
+      margin: 0 auto 30px auto;
+      border: solid 1px #d0d0d0;
+      > input {
+        display: block;
+        position: relative;
+        z-index: 2;
+        height: 43px;
+        width: 328px;
+        margin: 0 0 0 50px;
+        border: 0;
+        font-size: 18px;
+        line-height: 44px \9;
+        background: #fff;
+        & + .error {
+          position: absolute;
+          top: 45px;
+          left: 0;
+          display: block;
+          vertical-align: top;
+          line-height: 20px;
+          color: red;
+          white-space: nowrap;
+          > i:before {
+            vertical-align: top;
+            font-size: 20px;
+            color: red;
+          }
+        }
+      }
+      > i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 50px;
+        height: 43px;
+        text-align: center;
+        font-size: 18px;
+        color: #999;
+        line-height: 43px;
+        text-align: center;
+
+      }
+
+    }
+
+    .yzm {
+      width: 380px;
+      height: 45px;
+      margin: 0 auto 20px auto;
+      > .login-style {
+        width: 150px;
+        float: left;
+        margin: 0;
+        > input {
+          width: 148px;
+          margin: 0;
+        }
+      }
+      > img {
+        display: block;
+        float: left;
+        width: 120px;
+        height: 45px;
+        margin: 0 10px;
+      }
+
+      > a {
+        display: block;
+        float: left;
+        line-height: 45px;
+      }
+
+    }
+    .login-style-bottom {
+      clear: both;
+      width: 380px;
+      height: 40px;
+      margin: 0 auto;
+      > .check-group > span {
+        margin-left: 5px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,35 @@
+.choose {
+  width: @choose-width;
+  height: @choose-height;
+  > .choose-box {
+    display: block;
+    float: left;
+    width: @choose-box-width;
+    height: @choose-height;
+    border: solid 1px @choose-border-color;
+    background: @choose-bg;
+    padding: @choose-spacing;
+    overflow: auto;
+  }
+  > .choose-operation {
+    float: left;
+    width: @choose-operation-width;
+    height: @choose-height;
+    text-align: center;
+    > span {
+
+      display: block;
+
+      width: @choose-icon-width;
+      height: @choose-icon-height;
+      margin: @choose-icon-height/2 auto 0 auto;
+      font-size: @choose-icon-font;
+      font-weight: bold;
+      color: @choose-icon-color;
+      line-height: @choose-height/8;
+      cursor: pointer;
+    }
+
+  }
+
+}

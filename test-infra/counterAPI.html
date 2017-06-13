@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>API</title>
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/page.css">
+<link rel="stylesheet" type="text/css" href="../temporary/temporary.css">
+
+
+</head>
+
+<body>
+<div class="web">
+  <h2 class="panel-title">Counter API</h2>
+  <div class="p-10">
+    <h3 class="page-title m-b-10">属性：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th width="15%"  scope="row">type</th>
+        <td>设置盒子排列方式， 0为水平 num-horizontal  1为垂直 num-vertical，默认为0。</td>
+      </tr>
+      <tr>
+        <th width="15%"  scope="row">size</th>
+        <td>设置盒子大小尺寸，sm为小尺寸，不设置为大尺寸。默认不设置。</td>
+      </tr>
+      <tr>
+        <th width="15%"  scope="row">max</th>
+        <td>设置数量盒子可改变最大值。</td>
+      </tr>
+      <tr>
+        <th width="15%"  scope="row">min</th>
+        <td>设置数量盒子可改变最小值，默认为1。</td>
+      </tr>
+      <tr>
+        <th width="15%"  scope="row">data-state='disabled'</th>
+        <td>调用counter 方法的默认元素如果定义data-state='disabled'属性，则数量盒子不可操作。</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">事件：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th width="15%"  scope="row">getValue</th>
+        <td>触发getValue 事件，可得到当前数量盒子的值。</td>
+      </tr>
+    </table>
+    <h3 class="page-title m-b-10">方法：</h3>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-border">
+      <tr>
+        <th scope="row" width="15%">setVal</th>
+        <td>调用 setVal 方法，可设置数量盒子的值， 设置参数为指定的值，如果不设置则默认为0。</td>
+      </tr>
+      <tr>
+        <th scope="row" width="15%">operation</th>
+        <td>调用 show 方法，取消数量盒子data-state='disabled' 属性，将该盒子变为可操作。</td>
+      </tr>
+    </table>
+        <h3 class="title">效果演示路径：<a href="http://172.16.63.49:5002/Project/Page/JavascriptPage/counter/counter.html">查看效果</a></h3>
+
+  </div>
+</div>
+</div>
+</body>
+</html>

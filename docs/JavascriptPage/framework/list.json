@@ -1,0 +1,33 @@
+[
+    {
+        "name":"系统管理",
+        "href":"",
+        "target":"none",
+        "icon":"111",
+        "children":[
+
+            {
+                "name":"人员管理",
+                "href":"user/PersonnelManagement.html",
+                "target":"tab",
+                "icon":"444",
+                "children":""
+            },
+            {
+                "name":"角色管理",
+                "href":"user/RoleManagement.html",
+                "target":"tab",
+                "icon":"555",
+                "children":""
+            }
+        ]
+    },
+    {
+        "name":"消费者管理",
+        "href":"user/ConsumerManagement.html",
+        "target":"tab",
+        "icon":"66",
+        "children":""
+    }
+
+]

@@ -1,0 +1,232 @@
+// 导航
+.nav {
+  position: relative;
+  display: block;
+  width: @nav-width;
+  height: @nav-height;
+  line-height: @nav-height;
+  > ul {
+    width: @nav-width;
+    height: @nav-height;
+    > li {
+      position: relative;
+      display: block;
+      width: @nav-list-width;
+      height: @nav-height;
+      float: left;
+      > a {
+        position: relative;
+        display: block;
+        width: @nav-list-width;
+        font-size: @nav-font-size;
+        text-align: center;
+        text-decoration: none;
+        &:after, &:before {
+          position: absolute;
+          content: '';
+        }
+        &:before{
+          z-index: 1;
+        }
+        &:after{
+          z-index: 0;
+        }
+      }
+    }
+  }
+  //带有底边线导航
+  &.nav-underline {
+    border-bottom: @nav-border-width solid @nav-border;
+    > ul > li {
+      > a {
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: @nav-border-width;
+          background: @nav-border-accent;
+          content: '';
+          .transition(all .3s);
+        }
+
+      }
+      &:hover {
+        > a:after {
+          left: 0;
+          width: 100%
+        }
+
+      }
+      > .on {
+        &:after {
+
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: @nav-border-width;
+          background: @nav-border-accent;
+
+        }
+      }
+    }
+
+  }
+
+  //纯色填充导航
+  &.nav-bg {
+    background: @nav-bg;
+    margin-bottom: @nav-height;
+    > ul > li {
+      > a {
+        color: @nav-color;
+        &:after {
+
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0;
+          background: @nav-hover;
+
+          .transition(all .3s);
+        }
+      }
+      &:hover {
+        > a:after {
+
+          height: @nav-height;
+        }
+
+      }
+
+      > .on {
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: @nav-height;
+          background: @nav-hover;
+          content: '';
+        }
+      }
+    }
+  }
+
+  //纯色填充宽屏导航
+  &.nav-lg {
+    width: 100%;
+    > ul {
+      width: @nav-width;
+      margin: 0 auto;
+    }
+  }
+
+  //纯色填充圆角导航
+  &.nav-round {
+    border-radius: @nav-round;
+    overflow: hidden;
+  }
+
+  //二级导航水平排列
+  &.nav-menu-h {
+    > ul {
+      position: relative;
+      > li {
+        position: static;
+        > a {
+
+          display: block;
+          &:before {
+
+            bottom: -1px;
+            left: 50%;
+
+            margin-left: -@nav-arrow-size;
+            border-bottom: @nav-arrow-size solid @nav-arrow-color;
+            border-left: @nav-arrow-size solid transparent;
+            border-right: @nav-arrow-size solid transparent;
+
+            display: none;
+          }
+        }
+        &:hover {
+
+          > a:before, > ul {
+            display: block;
+          }
+        }
+        > ul {
+          position: absolute;
+          top: @nav-height;
+          left: 0;
+          width: @nav-width;
+          border: 1px solid @brand-primary;
+          background: @nav-child-bg;
+          display: none;
+          > li {
+            float: left;
+            display: block;
+            width: @nav-list-width;
+            text-align: center;
+            > a {
+              text-decoration: none;
+              color: @nav-child-color-accent;
+              &:hover {
+                color: @nav-child-color-accent;
+
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  //二级导航垂直排列
+  &.nav-menu-v {
+    > ul > li {
+      position: relative;
+      >a:before {
+        bottom: -1px;
+        left: 50%;
+        margin-left: -@nav-arrow-size;
+        border-bottom: @nav-arrow-size solid @nav-arrow-color;
+        border-left: @nav-arrow-size solid transparent;
+        border-right: @nav-arrow-size solid transparent;
+
+        display: none;
+      }
+      &:hover {
+
+        > a:before, > ul {
+          display: block;
+        }
+      }
+      > ul {
+        position: absolute;
+        top: @nav-height;
+        left: 0;
+        width: @nav-list-width*1.5;
+        border: 1px solid @brand-primary;
+        background: @nav-child-bg;
+        display: none;
+        > li {
+          line-height: @nav-height/1.5;
+          > a {
+            text-decoration: none;
+            display: block;
+            padding: 0 10px;
+            color: @nav-child-color-accent;
+            &:hover {
+              color: @nav-child-color;
+              background: @nav-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

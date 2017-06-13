@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>孝心档案</title>
+<link rel="stylesheet" type="text/css" href="special.css">
+<meta charset="utf-8">
+</head>
+<body ng-app="starter" ng-controller="myCtrl">
+<div style="padding: 20px;">
+  <button type="button" ng-click="stateCarouse()"> 点击查看</button>
+</div>
+<div class="modal-carouse-bg" data-role='modal-carouse' ng-if="state==1">
+  <div class="modal-carouse-close" data-role='carouse-close' ng-click="stateCarouse()"><strong>X</strong></div>
+  <div class="modal-carouse">
+    <div class="Enlarge-dome-img"><img ng-src="{{imgUrl}}"></div>
+    <div class="carousel-dome">
+      <div class="click-button next" ng-click="moveLeft()"><i class="fa fa-angle-left "></i></div>
+      <div class="click-button pre" ng-click="moveRight()"><i class="fa  fa-angle-right"></i></div>
+      <div class="carousel-dome-contain">
+        <ul class="carousel-ul-B" ng-style="ulMove">
+          <li ng-repeat="item in listdata  track by $index"><img ng-src="{{item.url}}"
+                                                                           ng-click="cloneImg(item.url,$index)"
+                                                                           ng-class="onClck==$index?'border-blue':''"> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="angular.js"></script> 
+<script src="banner.js"></script>
+</body>
+</html>

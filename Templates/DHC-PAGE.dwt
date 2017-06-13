@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>DHC 页面展示</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="../dist/js/scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+<script src="../dist/js/jquery-1.8.3.js"></script>
+<script src="../dist/js/scrollbar/perfect-scrollbar.js"></script>
+<script src="../dist/js/common.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<header class="header">
+  <h1 class="header-log"><img src="../dist/img/dhc_logo.png"></h1>
+  <div class="menu-btn"><i class=""></i></div>
+  <!-- <ul class="header-nav">
+    <li><a href="#" title="导航">导航</a> </li>
+    <li><a href="#" title="导航">导航</a> </li>
+  </ul>-->
+  <ul class="header-remind">
+    <li class="header-search">
+      <input name="" type="text">
+      <i  class="icon-search" title="搜索"></i> </li>
+    <li class="header-remind" ><i class="icon-message-1" title="消息提醒"></i>
+      <div class="header-remind-box">
+        <p class="header-remind-title">您有<span>0</span>条站内信</p>
+        <div class="header-remind-main">
+          <div class="perfect-scroll">
+            <div class="p-10">
+              <ul class="header-remind-list">
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+                <li><a href="#">查看</a>恭喜您，您的密码修改成功</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-remind-more"> <a href="#" >+ 查看更多</a></div>
+      </div>
+    </li>
+    <li class="header-user"><i class="icon-user-1"></i><span>您好！admin</span>
+      <div class="header-user-box">
+        <p>用户名：admin</p>
+        <p>上次登录时间：<br/>
+          2015-12-15  18:21:15</p>
+        <p>登录IP：172.166.201.122</p>
+        <p><a href="../pageDome/DHC-changePassword.html">修改密码</a></p>
+        <p><a href="../index.html">用户注销</a></p>
+      </div>
+    </li>
+  </ul>
+</header>
+<menu class="left-menu">
+  <div class="perfect-scroll">
+    <div class="clear">
+      <ul class="left-menu-list">
+        <li class="left-menu-one"><a href="../pageDome/DHC-home.html" title="首页">首页</a> </li>
+        <li class="left-menu-one"><a href="javascript:void(0)"title="页面展示">页面展示</a>
+          <ul class="left-menu-two">
+            <li class="on"><a href="../pageDome/DHC-list.html">列表页面</a></li>
+            <li><a href="../pageDome/DHC-detail.html">详情页面</a></li>
+            <li><a href="../pageDome/DHC-editor.html">编辑页面</a></li>
+            <li><a href="../../login.html" target="_blank">登录页面</a></li>
+          </ul>
+        </li>
+        <li class="left-menu-one"><a href="javascript:void(0)" title="业务页面">业务页面</a>
+          <ul class="left-menu-two">
+            <li><a href="../pageDome/DHC-changePassword.html">修改密码</a></li>
+            <li><a href="../pageDome/DHC-RoleManagement.html" >角色管理</a></li>
+            <li><a href="../pageDome/DHC-MemberManagement.html">人员管理</a></li>
+             <li><a href="../pageDome/DHC-PersonnelManagement.html">消费者管理</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</menu>
+<div class="container"> <!-- TemplateBeginEditable name="body" --><!-- TemplateEndEditable --></div>
+<div class="footer">2015-12 © 2016-12 Modern by DHC. 『The youth waystation, the dream began here!』</div>
+<!-- TemplateBeginEditable name="footer" --><!-- TemplateEndEditable -->
+</body>
+</html>

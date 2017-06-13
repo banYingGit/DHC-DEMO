@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>banner 效果</title>
+<link rel="stylesheet" type="text/css" href="../../../../dist/css/build.css">
+<link rel="stylesheet" type="text/css" href="../../../../fonts/fonts.css">
+<script src="../../../../dist/js/jquery-1.8.3.js"></script>
+</head>
+
+<body>
+<div class="p-10">
+  <h2 class="page-title">banner 缩略图左对齐（焦点样式为缩略图，居左显示） </h2>
+  <div class="p-10">
+    <ul id="bannerFour">
+       <li title="领考拉1000元新人礼，APP下单更享手机价"><a href="#"><img src="../../../../dist/img/play01.png"></a></li>
+      <li title="Ventry泰国官网认证 原装进口天然乳胶床垫 赠乳胶枕"><a href="#"><img src="../../../../dist/img/play02.png"></a></li>
+      <li title="Bose 迷你无线蓝牙便携音响II代"><a href="#"><img src="../../../../dist/img/play03.png"></a></li>
+      <li title="MICHAEL KORS 迈克高仕"><a href="#"><img src="../../../../dist/img/play04.png"></a></li>
+    </ul>
+  </div>
+</div>
+<script src="../../../../js/module/jquery.banner.js"></script> 
+<script>
+    $(function () {
+
+
+
+		$('#bannerFour').banner({
+
+			focusPosition:'left',
+			
+			focusStyle:'img'
+
+			})
+
+
+    })
+
+
+</script>
+</body>
+</html>

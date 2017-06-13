@@ -1,0 +1,183 @@
+@charset "utf-8";
+.rwx-web {
+	margin: 20px;
+	min-height: 540px;
+	background: #fff;
+}
+/* 修改组件样式  start*/
+.rwx-web >.tab {
+	position: relative;
+	top: -1px;
+}
+.rwx-web >.tab>.tab-title {
+	margin: 0
+}
+.rwx-web >.tab>.tab-title, .rwx-web >.tab>.tab-title>li>span {
+	background: url(../../images/bodyBg.jpg) #f1f1f1;
+}
+.rwx-web >.tab>.tab-title>li.on>span {
+	background: #fff;
+}
+.rwx-web >.tab>.tab-body {
+	padding: 10px 20px;
+}
+/* 修改组件样式  end*/
+
+/* 筛选区域 */
+.rwx-web-search {
+	padding: 5px 0 10px 0;
+	border-bottom: solid 1px #ddd
+}
+.rwx-web-search > div.row {
+	line-height: 30px;
+}
+.rwx-web-search > div.row > div > div {
+	padding: 0;
+}
+.rwx-web-search > div.row > div > div.p-r-10 {
+	padding-right: 10px;
+}
+.rwx-web-search > div.row > label[class^="col-"] {
+	display: block;
+	padding-right: 0;
+	padding-left: 0;
+	text-align: right;
+}
+.rwx-web-search .btn {
+	margin: -1px 5px 0 5px;
+}
+/* 操作区域*/
+.rwx-web-operation {
+	height: 48px;
+	padding: 15px 0 0 0;
+	border-bottom: solid 1px #ddd
+}
+.rwx-web-operation > .rwx-web-operation-title {
+	display: block;
+	float: left;
+	padding: 0 10px 0 5px;
+}
+.rwx-web-operation .btn {
+	margin-top: -5px;
+}
+/* 列表内容区域 */
+.rwx-web-table {
+	padding: 10px 0;
+}
+/* 详情 编辑页面 */
+
+.modal-lg .rwx-web-body {
+	min-height: 410px;
+	padding:0 20px;
+	overflow: auto;
+}
+.rwx-web-body > .title-one {
+	position: relative;
+	height: 45px;
+	padding-top: 10px;
+	border-bottom: solid 1px #ddd;
+	color: #333;
+	line-height: 35px;
+	font-size: 14px;
+}
+.rwx-web-body > .rwx-web-body-box {
+	margin: 0 20px;
+	padding-bottom: 30px;
+}
+.rwx-web-body .rwx-web-body-box .title-two {
+	position: relative;
+	height: 45px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: dashed 1px #e1e1e1;
+	color: #333;
+	line-height: 35px;
+}
+.rwx-web-body .rwx-web-body-box .row label[class^="col-"] {
+	display: block;
+	padding-right: 0;
+	padding-left: 0;
+	text-align: right;
+	line-height: 30px;
+}
+.rwx-web-body .rwx-web-body-box label[class^="col-"] > i {
+	color: #F03;
+	padding-right: 5px;
+}
+.rwx-web-body > .rwx-web-body-box > .row > div> p.note {
+	line-height: 30px;
+	color: #999;
+}
+.rwx-web-body > .rwx-web-body-box > .row > div.col-text {
+	margin-top: 10px;
+	padding: 0 0 0 10px;
+	line-height: 30px;
+}
+.rwx-web-body > .rwx-web-body-box > .row > div >p.col-text {
+	margin-top: 5px;
+	line-height: 20px;
+}
+.rwx-web-body > .rwx-web-body-box > .row > div > .check-group, .rwx-web-body > .rwx-web-body-box > .row > div > .radio-group {
+	margin-top: 5px;
+}
+.rwx-web-body > .rwx-web-body-box > .row > div > .check-group >label + span, .rwx-web-body > .rwx-web-body-box > .row > div > .radio-group >label + span {
+	padding: 0 10px 0 5px;
+}
+.rwx-web-body > .rwx-web-body-box > .row > div > .check-on-off {
+	margin-top: 3px;
+}
+/* 时间轴 */
+.timeline {
+	position: relative;
+	margin: 20px 0 0 100px;
+}
+.timeline > li.line {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	z-index: 1;
+	width: 2px;
+	height: 100%;
+	background: #1d93ed;
+}
+.timeline > li p.point {
+	position: relative;
+	z-index: 10;
+	float: left;
+	width: 130px;
+	padding-left: 30px;
+	line-height: 20px;
+}
+.timeline > li p.point:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	border: solid 2px #1d93ed;
+	content: ''
+}
+.timeline > li.new p, .timeline > li.new p.point {
+	color: #1d93ed;
+}
+.timeline > li.new p.point:after {
+	background: #1d93ed;
+}
+.timeline > li>.list {
+	float: left;
+	width: 700px;
+	padding-bottom: 25px;
+	line-height: 25px;
+}
+/* 底部按钮 */
+.rwx-web-bottom {
+	height: 55px;
+	padding: 10px 0;
+	border-top: solid 1px #ddd;
+	text-align: center;
+}
+.rwx-web-bottom > .btn {
+	margin: 0 10px;
+}
